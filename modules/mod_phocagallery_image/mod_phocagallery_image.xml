@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Phoca Gallery Image Module</name>
+	<creationDate>22/04/2010</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>2.7.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[ 
+       Phoca Gallery Image Module - displays image(s) from Phoca Gallery component<br />
+       More information on <a href="http://www.phoca.cz" target="_blank" >www.phoca.cz</a>  
+      ]]></description>
+
+	<!-- Main File Copy Section -->
+	<files>
+		<filename module="mod_phocagallery_image">index.html</filename>
+		<filename module="mod_phocagallery_image">mod_phocagallery_image.php</filename>
+		<filename module="mod_phocagallery_image">mod_phocagallery_image.xml</filename>
+		<filename module="mod_phocagallery_image">assets/index.html</filename>
+		<filename module="mod_phocagallery_image">assets/phocagallery_module_image.css</filename>
+		<filename module="mod_phocagallery_image">assets/phocagallery_moduleieall_image.css</filename>
+		<filename module="mod_phocagallery_image">elements/index.html</filename>
+		<filename module="mod_phocagallery_image">elements/phocacolortextmod.php</filename>
+		<filename module="mod_phocagallery_image">elements/phocagallerycsmod.php</filename>
+		<filename module="mod_phocagallery_image">elements/phocaheadmod.php</filename>
+		<filename module="mod_phocagallery_image">tmpl/default.php</filename>
+		<filename module="mod_phocagallery_image">tmpl/index.html</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocagallery_image.ini</language>
+	</languages>
+
+	<!-- Only Development - copy ./front, ./language, ./other to admin area -->
+	<files>
+		<filename>language/en-GB/en-GB.mod_phocagallery_image.ini</filename>
+		<filename>other/install_xml.php</filename>
+	</files>
+	
+	<params addpath="/modules/mod_phocagallery_image/elements">
+		
+		<param name="@phocahead" type="phocaheadmod" default="GENERAL SETTINGS LABEL" />
+		<param name="category_id" type="phocagallerycsmod" default="0" label="Category ID(s)" description="Category ID(s) DESC"  multiple="true" size="5" />
+		<param name="image_ordering" type="list" default="9" label="Image Ordering" description="Image Ordering DESC">
+			<option value="1">Ordering ASC</option>
+			<option value="2">Ordering DESC</option>
+			<option value="3">Title ASC</option>
+			<option value="4">Title DESC</option>
+			<option value="5">Date ASC</option>
+			<option value="6">Date DESC</option>
+			<option value="7">Id ASC</option>
+			<option value="8">Id DESC</option>
+			<option value="9">Random</option>
+			
+		</param>
+		<param name="limit_start" default="0" size="4" type="text" label="Limit Start" description="Limit Start DESC" />
+		<param name="limit_count" default="1" size="4" type="text" label="Limit Count" description="Limit Count DESC" />
+		<param name="module_link" type="list" default="0" label="Module Link" description="Module Link DESC">
+				<option value="0">Link to detail image</option>
+				<option value="1">Link to category</option>
+				<option value="2">Link to categories</option>
+		</param>
+		
+		<param name="@phocahead" type="phocaheadmod" default="DESIGN SETTINGS LABEL" />
+		<param name="module_type" type="list" default="shadow1" label="Module Type" description="Module Type DESC">
+				<option value="0">Default</option>
+				<option value="1">Mosaic</option>
+		</param>
+		
+		
+		<param name="@spacer" type="spacer" default="Default" label="Default" description="" />
+		<param name="font_color" default="#b36b00" size="10" type="phocacolortextmod" label="Font Color" description="Font Color Desc" />
+		<param name="background_color" default="#fcfcfc" size="10" type="phocacolortextmod" label="Background Color" description="Background Color DESC" />
+		<param name="background_color_hover" default="#f5f5f5" size="10" type="phocacolortextmod" label="Background Color Hover" description="Background Color Hover DESC" />
+		<param name="image_background_color" default="#f5f5f5" size="10" type="phocacolortextmod" label="Image Background Color" description="Image Background Color DESC" />
+		<param name="border_color" default="#e8e8e8" size="10" type="phocacolortextmod" label="Border Color" description="Border Color DESC" />
+		<param name="border_color_hover" default="#b36b00" size="10" type="phocacolortextmod" label="Border Color Hover" description="Border Color Hover DESC" />
+			
+			
+		<param name="image_background_shadow" type="list" default="shadow1" label="Image Background Shadow" description="Image Background Shadow DESC">
+			<option value="none">None</option>
+			<option value="shadow1">shadow1</option>
+			<option value="shadow2">shadow2</option>
+			<option value="shadow3">shadow3</option>
+		</param>	
+		
+		<param name="display_name" type="radio" default="1" label="Display Name" description="Display/Hide Name DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		<param name="display_icon_detail" type="radio" default="1" label="Display Detail Icon" description="Display/Hide Detail Icon DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="display_icon_download" type="radio" default="0" label="Display Download Icon" description="Display/Hide Download Icon DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+
+		<param name="font_size_name" default="12" size="4" type="text" label="Font Size Name" description="Font Size Name DESC" />
+		<param name="char_length_name" default="11" size="4" type="text" label="Char Length Name" description="Char Length Name DESC" />
+		
+		<param name="category_box_space" default="0" size="4" type="text" label="Category Box Space" description="Category Box Space DESC" />
+		
+		<param name="@spacer" type="spacer" default="Mosaic" label="Mosaic" description="" />
+		<param name="padding_mosaic" default="3" size="4" type="text" label="Mosaic Padding" description="Mosaic Padding DESC" />
+		
+		<param name="custom_image_width" default="" size="4" type="text" label="PHOCAGALLERY_C_IMAGE_WIDTH" description="PHOCAGALLERY_C_IMAGE_WIDTH_DESC" />
+		
+		<param name="custom_image_height" default="" size="4" type="text" label="PHOCAGALLERY_C_IMAGE_HEIGHT" description="PHOCAGALLERY_C_IMAGE_HEIGHT_DESC" />
+		<param name="minimum_box_width" default="" size="4" type="text" label="PHOCAGALLERY_MIN_BOX_WIDTH" description="PHOCAGALLERY_MIN_BOX_WIDTH_DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+	
+		
+	<param name="phocagallery_module_width" default="" size="10" type="text" label="Phoca Gallery Module Width" description="Phoca Gallery Module Width Desc" />
+	
+	
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		
+		<param name="@phocahead" type="phocaheadmod" default="DETAIL SETTINGS LABEL" />
+		
+		<param name="@spacer" type="spacer" default="Detail Window Warning" label="Detail Window Warning" description="" />
+		<param name="detail_window" type="list" default="0" label="Detail Window" description="Detail Window Desc">
+			<option value="1">Standard Popup Window</option>
+			<option value="0">Modal Popup Box</option>
+			<option value="2">Modal Popup Box (Image only)</option>
+			<option value="3">Shadowbox</option>
+			<option value="4">Highslide</option>
+			<option value="5">Highslide (Image only)</option>
+			<option value="6">JAK Lightbox</option>
+			<option value="7">No Popup</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Modal Box" label="Modal Box" description="" />
+		
+		<param name="modal_box_overlay_color" default="#000000" size="10" type="phocacolortextmod" label="Modal Box Overlay Color" description="Modal Box Overlay Color DESC" />
+		
+		<param name="modal_box_overlay_opacity" default="0.3" size="10" type="list" label="Modal Box Overlay Opacity" description="Modal Box Overlay Opacity DESC" >
+		<option value="0">0 %</option>
+		<option value="0.1">10 %</option>
+		<option value="0.2">20 %</option>
+		<option value="0.3">30 %</option>
+		<option value="0.4">40 %</option>
+		<option value="0.5">50 %</option>
+		<option value="0.6">60 %</option>
+		<option value="0.7">70 %</option>
+		<option value="0.8">80 %</option>
+		<option value="0.9">90 %</option>
+		<option value="1">100 %</option>
+		
+		</param>
+		
+		<param name="modal_box_border_color" default="#6b6b6b" size="10" type="phocacolortextmod" label="Modal Box Border Color" description="Modal Box Border Color DESC" />
+		
+		<param name="modal_box_border_width" default="2" size="10" type="text" label="Modal Box Border Width" description="Modal Box Border Width DESC" />
+		
+		<param name="@spacer" type="spacer" default="Shadow Box" label="Shadow Box" description="" />
+		
+		<param name="sb_slideshow_delay" default="5" size="10" type="list" label="Shadow Box Slideshow Delay" description="Shadow Box Slideshow Delay DESC" >
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Highslide" label="Highslide" description="" />
+		
+		<param name="highslide_class" default="rounded-white" size="10" type="list" label="Highslide Class" description="Highslide Class DESC" >
+			<option value="rounded-white">Rounded White</option>
+			<option value="wide-border">Wide Border</option>
+			<option value="dark">Dark</option>
+			<option value="outer-glow">Outer Glow</option>
+			<option value="floating-caption">Floating Caption</option>
+			<option value="borderless floating-caption">Borderless Floating Caption</option>
+		</param>
+		
+		<param name="highslide_opacity" default="0" size="10" type="list" label="Highslide Opacity" description="Highslide Opacity DESC" >
+			<option value="0">0 %</option>
+			<option value="0.1">10 %</option>
+			<option value="0.2">20 %</option>
+			<option value="0.3">30 %</option>
+			<option value="0.4">40 %</option>
+			<option value="0.5">50 %</option>
+			<option value="0.6">60 %</option>
+			<option value="0.7">70 %</option>
+			<option value="0.8">80 %</option>
+			<option value="0.9">90 %</option>
+			<option value="1">100 %</option>
+		</param>
+		
+		<param name="highslide_outline_type" default="rounded-white" size="10" type="list" label="Highslide Outline Type" description="Highslide Outline Type DESC" >
+			<option value="rounded-white">Rounded White</option>
+			<option value="none">None</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Highslide (Image Only)" label="Highslide (Image Only)" description="" />
+		
+		<param name="highslide_fullimg" default="0" size="10" type="list" label="Highslide Full Image" description="Highslide Full Image DESC" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="highslide_close_button" default="0" size="10" type="list" label="Highslide Close Button" description="Highslide Close Button DESC" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="highslide_slideshow" default="1" size="10" type="list" label="Highslide Slideshow" description="Highslide Slideshow DESC" >
+			<option value="0">No</option>
+			<option value="1">Standard</option>
+			<option value="2">Slideshow with small thumbnails</option>
+		</param>
+		
+		<param name="highslide_description" default="1" size="10" type="list" label="Highslide Description" description="Highslide Description DESC" >
+			<option value="1">Only Title</option>
+			<option value="2">Only Description</option>
+			<option value="3">Title and Description</option>
+			<option value="0">None</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="JAK Lightbox" label="JAK Lightbox" description="" />
+		
+		<param name="jak_slideshow_delay" default="5" size="10" type="list" label="JAK Lightbox Slideshow Delay" description="JAK Lightbox Slideshow Delay DESC" >
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</param>
+		<param name="@spacer" type="spacer" default="JAK LIGHTBOX ORIENTATION WARNING" label="JAK LIGHTBOX ORIENTATION WARNING" description="" />
+		<param name="jak_orientation" default="none" size="10" type="list" label="JAK Lightbox Orientation" description="JAK Lightbox Orientation DESC" >
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+			<option value="none">None</option>
+		</param>
+		
+		<param name="jak_description" default="1" size="10" type="list" label="JAK Lightbox Description" description="JAK Lightbox Description DESC" >
+			<option value="1">Only Title</option>
+			<option value="2">Only Description</option>
+			<option value="3">Title and Description</option>
+			<option value="0">None</option>
+		</param>
+		<param name="jak_description_height" default="10" size="4" type="text" label="JAK Lightbox Description Height" description="JAK Lightbox Description Height DESC" />
+		
+		<param name="@phocahead" type="phocaheadmod" default="DEFAULT DESCRIPTION SETTINGS LABEL" />
+		
+		<param name="display_description_detail" type="radio" default="0" label="Display Description Detail" description="Display/Hide Description Detail DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		<param name="description_detail_height" default="16" size="4" type="text" label="Description Detail Height" description="Description Detail Height DESC" />
+	
+	<param name="detail_buttons" type="radio" default="1" label="Display Buttons" description="Display Buttons DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	
+	</params>
+</install>

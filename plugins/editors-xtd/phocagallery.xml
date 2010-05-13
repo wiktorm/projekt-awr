@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" group="editors-xtd" method="upgrade" version="1.5.0">
+	<name>Button - Phoca Gallery</name>
+	<creationDate>21/04/2010</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>2.7.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[ 
+       Phoca Gallery Editor Button Plugin - adds Phoca Gallery button into article editor<br />
+       More information on <a href="http://www.phoca.cz" target="_blank" >www.phoca.cz</a>  
+      ]]></description>
+
+	<!-- Main File Copy Section -->
+	<files>
+		<filename plugin="phocagallery">phocagallery.php</filename>
+		<filename plugin="phocagallery">phocagallery.xml</filename>
+		<filename plugin="phocagallery">phocagallery/css/index.html</filename>
+		<filename plugin="phocagallery">phocagallery/css/phocagallery.css</filename>
+		<filename plugin="phocagallery">phocagallery/images/icon-button.png</filename>
+		<filename plugin="phocagallery">phocagallery/images/index.html</filename>
+		<filename plugin="phocagallery">phocagallery/index.html</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_editors-xtd_phocagallery.ini</language>
+	</languages>
+	<administration>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.plg_editors-xtd_phocagallery.ini</language>
+		</languages>
+	</administration>
+	
+</install>

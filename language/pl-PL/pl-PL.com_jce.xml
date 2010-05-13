@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="language">
+  <name>Polish</name>
+  <tag>pl-PL</tag>
+  <version>1.5.7</version>
+  <creationDate>2010-03-05</creationDate>
+  <author>Polskie Centrum Joomla: DooSHeK, zwiastun</author>
+  <authorEmail>zwiastun@joomla.pl</authorEmail>
+  <authorUrl>http://www.joomla.pl</authorUrl>
+  <copyright>(C) 2006 - 2009 Ryan Demmer. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description>Polskie pliki językowe dla JCE 1.5</description>
+  <site>
+    <files folder="site">
+      <filename>pl-PL.com_jce.ini</filename>
+      <filename>pl-PL.com_jce_advlink.ini</filename>
+      <filename>pl-PL.com_jce_advlink_docmanlinks.ini</filename>
+      <filename>pl-PL.com_jce_advlink_rokdownloads.ini</filename>		
+      <filename>pl-PL.com_jce_browser.ini</filename>
+      <filename>pl-PL.com_jce_filemanager.ini</filename>
+      <filename>pl-PL.com_jce_hsexpander.ini</filename>
+      <filename>pl-PL.com_jce_hshtmlexpander.ini</filename>
+      <filename>pl-PL.com_jce_iframe.ini</filename>		
+      <filename>pl-PL.com_jce_imgmanager.ini</filename>
+      <filename>pl-PL.com_jce_imgmanager_ext.ini</filename>
+      <filename>pl-PL.com_jce_media.ini</filename>
+      <filename>pl-PL.com_jce_mediamanager.ini</filename>
+      <filename>pl-PL.com_jce_paste.ini</filename>
+      <filename>pl-PL.com_jce_spellchecker.ini</filename>
+      <filename>pl-PL.com_jce_templatemanager.ini</filename>		
+    </files>
+  </site>
+  <tinymce>
+  <files folder="tinymce">>
+    <filename>langs/pl.js</filename>
+    <filename>langs/pl_dlg.js</filename>
+    <filename>plugins/advcode/langs/pl.js</filename>
+    <filename>plugins/advcode/langs/pl_dlg.js</filename>
+    <filename>plugins/advlink/langs/pl_dlg.js</filename>
+    <filename>plugins/article/langs/pl_dlg.js</filename>	 
+    <filename>plugins/article/langs/pl.js</filename>
+	 <filename>plugins/browser/langs/pl_dlg.js</filename>
+	 <filename>plugins/caption/langs/pl.js</filename>
+	 <filename>plugins/emotions/langs/pl_dlg.js</filename>
+    <filename>plugins/filemanager/langs/pl.js</filename>
+    <filename>plugins/filemanager/langs/pl_dlg.js</filename>
+    <filename>plugins/hsexpander/langs/pl_dlg.js</filename>
+    <filename>plugins/hshtmlexpander/langs/pl_dlg.js</filename>
+	 <filename>plugins/iframe/langs/pl.js</filename>
+	 <filename>plugins/imgmanager/langs/pl_dlg.js</filename>
+    <filename>plugins/imgmanager_ext/langs/pl_dlg.js</filename>
+    <filename>plugins/mediamanager/langs/pl_dlg.js</filename>
+    <filename>plugins/paste/langs/pl_dlg.js</filename>
+    <filename>plugins/preview/langs/pl.js</filename>	 
+    <filename>plugins/searchreplace/langs/pl_dlg.js</filename>
+    <filename>plugins/style/langs/pl_dlg.js</filename>
+    <filename>plugins/table/langs/pl_dlg.js</filename>
+    <filename>plugins/templatemanager/langs/pl.js</filename>
+    <filename>plugins/templatemanager/langs/pl_dlg.js</filename>
+    <filename>plugins/xhtmlxtras/langs/pl_dlg.js</filename>
+    <filename>themes/advanced/langs/pl.js</filename>
+    <filename>themes/advanced/langs/pl_dlg.js</filename>
+  </files>
+  </tinymce>
+  <administration>
+    <files folder="administration">
+      <filename>pl-PL.com_jce.ini</filename>
+      <filename>pl-PL.com_jce.menu.ini</filename>
+      <filename>pl-PL.plg_editors_jce.ini</filename>					
+      <filename>pl-PL.plg_system_jceutilities.ini</filename>
+		<filename>pl-PL.plg_system_mediaobject.ini</filename>
+		
+    </files>
+  </administration>
+</install>
