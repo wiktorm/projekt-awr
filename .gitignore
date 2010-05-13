@@ -1,1 +1,3 @@
 *.spc
+.configuration.php-*
+configuration.php
