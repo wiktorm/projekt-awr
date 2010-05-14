@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" group="content" version="1.5.0" method="upgrade">
+	<name>Phoca Download Plugin</name>
+	<creationDate>12/05/2010</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>1.3.5</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[ 
+       Phoca Download Plugin - displaying links to Phoca Download sections, categories or files in article<br />
+       More information on <a href="http://www.phoca.cz" target="_blank" >www.phoca.cz</a>  
+      ]]></description>
+
+	
+	<!-- Main File Copy Section -->
+	<files>
+		<filename plugin="phocadownload">phocadownload.php</filename>
+		<filename plugin="phocadownload">phocadownload.xml</filename>
+		<filename plugin="phocadownload">phocadownload/css/index.html</filename>
+		<filename plugin="phocadownload">phocadownload/css/phocadownload.css</filename>
+		<filename plugin="phocadownload">phocadownload/images/AUTHORS</filename>
+		<filename plugin="phocadownload">phocadownload/images/COPYING</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-box-16.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-box-32.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-box-64.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-category-16.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-category-32.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-category-64.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-doc-16.doc.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-doc-16.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-doc-32.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-doc-64.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-download-16.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-download-32.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-download-64.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-play-16.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-play-32.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-play-64.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-preview-16.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-preview-32.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-preview-64.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-section-16.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-section-32.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/icon-section-64.png</filename>
+		<filename plugin="phocadownload">phocadownload/images/index.html</filename>
+		<filename plugin="phocadownload">phocadownload/index.html</filename>
+	</files>
+	
+	<params>
+		<param name="icon_size" type="list" default="32" label="Icon Size" description="Icon Size DESC">
+			<option value="64">64</option>
+			<option value="32">32</option>
+			<option value="16">16</option>
+		</param>
+	</params>
+	
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_phocadownload.ini</language>
+	</languages>
+	
+	<administration>
+		<languages >
+			<language tag="en-GB">language/en-GB/en-GB.plg_content_phocadownload.ini</language>
+		</languages>
+	</administration>
+
+</install>

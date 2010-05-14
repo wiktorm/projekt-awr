@@ -217,7 +217,7 @@ class PhocaGalleryViewCategories extends JView
 			// Use the static HTML library to build the image tag
 			$tmpl['image'] 		= JHTML::_('image', 'images/stories/'.$params->get('image'), JText::_('Phoca Gallery'), $attribs);
 		}
-		$tmpl['ab'] = base64_decode('PGRpdiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogcmdiKDIxMSwgMjExLCAyMTEpOyI+UG93ZXJlZCBieSA8YSBocmVmPSJodHRwOi8vd3d3LnBob2NhLmN6IiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiBub25lOyIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJQaG9jYS5jeiI+UGhvY2E8L2E+IDxhIGhyZWY9Imh0dHA6Ly93d3cucGhvY2EuY3ovcGhvY2FnYWxsZXJ5IiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiBub25lOyIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJQaG9jYSBHYWxsZXJ5Ij5HYWxsZXJ5PC9hPjwvZGl2Pg0K');
+		$tmpl['ab'] = ''; //base64_decode('PGRpdiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogcmdiKDIxMSwgMjExLCAyMTEpOyI+UG93ZXJlZCBieSA8YSBocmVmPSJodHRwOi8vd3d3LnBob2NhLmN6IiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiBub25lOyIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJQaG9jYS5jeiI+UGhvY2E8L2E+IDxhIGhyZWY9Imh0dHA6Ly93d3cucGhvY2EuY3ovcGhvY2FnYWxsZXJ5IiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiBub25lOyIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJQaG9jYSBHYWxsZXJ5Ij5HYWxsZXJ5PC9hPjwvZGl2Pg0K');
 		// ACTION
 		$tmpl['action']	= $uri->toString();
 		

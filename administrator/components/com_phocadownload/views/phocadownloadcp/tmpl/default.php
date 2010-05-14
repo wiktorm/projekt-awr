@@ -25,17 +25,7 @@
 	$link = 'index.php?option=com_phocadownload&view=phocadownloadinfo';
 	echo PhocaHelperControlPanel::quickIconButton( $link, 'icon-48-info.png', JText::_( 'Info' ) );
 	
-	?>
-			
-			<div style="clear:both">&nbsp;</div>
-			<p>&nbsp;</p>
-			<div style="text-align:center;padding:0;margin:0;border:0">
-				<iframe style="padding:0;margin:0;border:0" src="http://www.phoca.cz/adv/phocadownload" noresize="noresize" frameborder="0" border="0" cellspacing="0" scrolling="no" width="500" marginwidth="0" marginheight="0" height="125">
-				<a href="http://www.phoca.cz/adv/phocadownload" target="_blank">Phoca Guestbook</a>
-				</iframe> 
-			</div>
-			
-			
+	?>			
 			</div>
 		</td>
 		

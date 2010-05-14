@@ -549,7 +549,7 @@ class PhocaDownloadHelper
 	}
 	
 		function renderPhocaDownload() {
-			return base64_decode('PGRpdiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjojY2NjOyI+UG93ZXJlZCBieSA8YSBocmVmPSJodHRwOi8vd3d3LnBob2NhLmN6L3Bob2NhZG93bmxvYWQiIHN0eWxlPSJ0ZXh0LWRlY29yYXRpb246IG5vbmU7IiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlBob2NhIERvd25sb2FkIj5QaG9jYSBEb3dubG9hZDwvYT48L2Rpdj4=');
+			return ''; //base64_decode('PGRpdiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjojY2NjOyI+UG93ZXJlZCBieSA8YSBocmVmPSJodHRwOi8vd3d3LnBob2NhLmN6L3Bob2NhZG93bmxvYWQiIHN0eWxlPSJ0ZXh0LWRlY29yYXRpb246IG5vbmU7IiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlBob2NhIERvd25sb2FkIj5QaG9jYSBEb3dubG9hZDwvYT48L2Rpdj4=');
 	}
 	
 	/**
