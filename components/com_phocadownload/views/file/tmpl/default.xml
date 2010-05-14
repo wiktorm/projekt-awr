@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="PHOCADOWNLOAD FILE LAYOUT">
+		<message>
+			<![CDATA[PHOCADOWNLOAD FILE LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>PHOCADOWNLOAD FILE LAYOUT</name>
+		<description>PHOCADOWNLOAD FILE LAYOUT DESC</description>
+		<url addpath="/administrator/components/com_phocadownload/elements">
+			<param name="id" type="phocafile" default="0" label="PHOCADOWNLOADSELECTFILE" description="PHOCADOWNLOADSELECTFILEDESC" />
+		</url>
+		<params>
+
+			<param name="show_pagination" type="radio" default="1" label="Pagination" description="Pagination DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			
+			<param name="show_pagination_limit" type="radio" default="1" label="Display Select" description="Display Select DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install method="upgrade" type="component" version="1.5.0">
+	<name>PhocaDownload</name>
+	<creationDate>12/05/2010</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<!-- The version string is recorded in the components table -->
+	<version>1.3.5</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Phoca Download</description>
+
+	<!-- Install Database Section -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+
+	<!-- Uninstall Database Section -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Custom Install Script to execute -->
+	<installfile>install.phocadownload.php</installfile>
+
+	<!-- Custom Uninstall Script to execute -->
+	<uninstallfile>uninstall.phocadownload.php</uninstallfile>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="front">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>phocadownload.php</filename>
+		<filename>router.php</filename>
+		<filename>assets/flowplayer/LICENSE-flowplayer.txt</filename>
+		<filename>assets/flowplayer/LICENSE-flowplayeraudio.txt</filename>
+		<filename>assets/flowplayer/flowplayer-3.1.4.min.js</filename>
+		<filename>assets/flowplayer/flowplayer-3.1.5.swf</filename>
+		<filename>assets/flowplayer/flowplayer.audio-3.1.2.swf</filename>
+		<filename>assets/flowplayer/flowplayer.controls-3.1.5.swf</filename>
+		<filename>assets/flowplayer/index.html</filename>
+		<filename>assets/images/bg-details.png</filename>
+		<filename>assets/images/bg-download.png</filename>
+		<filename>assets/images/bg-play.png</filename>
+		<filename>assets/images/bg-preview.png</filename>
+		<filename>assets/images/bl.png</filename>
+		<filename>assets/images/br.png</filename>
+		<filename>assets/images/button-detail-l.png</filename>
+		<filename>assets/images/button-detail-r.png</filename>
+		<filename>assets/images/button-download-l.png</filename>
+		<filename>assets/images/button-download-r.png</filename>
+		<filename>assets/images/button-play-l.png</filename>
+		<filename>assets/images/button-play-r.png</filename>
+		<filename>assets/images/button-preview-l.png</filename>
+		<filename>assets/images/button-preview-r.png</filename>
+		<filename>assets/images/category.png</filename>
+		<filename>assets/images/document.png</filename>
+		<filename>assets/images/folder.png</filename>
+		<filename>assets/images/htl.png</filename>
+		<filename>assets/images/htr.png</filename>
+		<filename>assets/images/icon-details.png</filename>
+		<filename>assets/images/icon-document-16.png</filename>
+		<filename>assets/images/icon-document-32.png</filename>
+		<filename>assets/images/icon-document-48.png</filename>
+		<filename>assets/images/icon-document-64.png</filename>
+		<filename>assets/images/icon-download.png</filename>
+		<filename>assets/images/icon-hot.png</filename>
+		<filename>assets/images/icon-loading.gif</filename>
+		<filename>assets/images/icon-new.png</filename>
+		<filename>assets/images/icon-phoca-logo.png</filename>
+		<filename>assets/images/icon-play.png</filename>
+		<filename>assets/images/icon-preview.png</filename>
+		<filename>assets/images/icon-publish.png</filename>
+		<filename>assets/images/icon-unpublish.png</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/next-grey.png</filename>
+		<filename>assets/images/next.png</filename>
+		<filename>assets/images/prev-grey.png</filename>
+		<filename>assets/images/prev.png</filename>
+		<filename>assets/images/tl.png</filename>
+		<filename>assets/images/tr.png</filename>
+		<filename>assets/images/up.png</filename>
+		<filename>assets/images/white-space.png</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/phocadownload-grey-ie6.css</filename>
+		<filename>assets/phocadownload-grey.css</filename>
+		<filename>helpers/index.html</filename>
+		<filename>helpers/phocadownload.php</filename>
+		<filename>helpers/route.php</filename>
+		<filename>models/category.php</filename>
+		<filename>models/file.php</filename>
+		<filename>models/index.html</filename>
+		<filename>models/play.php</filename>
+		<filename>models/section.php</filename>
+		<filename>models/sections.php</filename>
+		<filename>models/user.php</filename>
+		<filename>views/category/index.html</filename>
+		<filename>views/category/metadata.xml</filename>
+		<filename>views/category/tmpl/default.php</filename>
+		<filename>views/category/tmpl/default.xml</filename>
+		<filename>views/category/tmpl/index.html</filename>
+		<filename>views/category/view.html.php</filename>
+		<filename>views/feed/index.html</filename>
+		<filename>views/feed/metadata.xml</filename>
+		<filename>views/feed/tmpl/index.html</filename>
+		<filename>views/feed/view.feed.php</filename>
+		<filename>views/file/index.html</filename>
+		<filename>views/file/metadata.xml</filename>
+		<filename>views/file/tmpl/default.php</filename>
+		<filename>views/file/tmpl/default.xml</filename>
+		<filename>views/file/tmpl/index.html</filename>
+		<filename>views/file/view.html.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/play/index.html</filename>
+		<filename>views/play/metadata.xml</filename>
+		<filename>views/play/tmpl/default.php</filename>
+		<filename>views/play/tmpl/default.xml</filename>
+		<filename>views/play/tmpl/index.html</filename>
+		<filename>views/play/view.html.php</filename>
+		<filename>views/section/index.html</filename>
+		<filename>views/section/metadata.xml</filename>
+		<filename>views/section/tmpl/default.php</filename>
+		<filename>views/section/tmpl/default.xml</filename>
+		<filename>views/section/tmpl/index.html</filename>
+		<filename>views/section/view.html.php</filename>
+		<filename>views/sections/index.html</filename>
+		<filename>views/sections/metadata.xml</filename>
+		<filename>views/sections/tmpl/default.php</filename>
+		<filename>views/sections/tmpl/default.xml</filename>
+		<filename>views/sections/tmpl/index.html</filename>
+		<filename>views/sections/view.html.php</filename>
+		<filename>views/user/index.html</filename>
+		<filename>views/user/metadata.xml</filename>
+		<filename>views/user/tmpl/default.php</filename>
+		<filename>views/user/tmpl/default.xml</filename>
+		<filename>views/user/tmpl/default_files.php</filename>
+		<filename>views/user/tmpl/index.html</filename>
+		<filename>views/user/view.html.php</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.com_phocadownload.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_phocadownload.menu.ini</language>
+	</languages>
+
+	<!-- Administration -->
+	<administration>
+		<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu.png" link="option=com_phocadownload">Phoca Download</menu>
+		<submenu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-control-panel.png" link="option=com_phocadownload">Control Panel</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-files.png" link="option=com_phocadownload&amp;view=phocadownloads">Files</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-section.png" link="option=com_phocadownload&amp;view=phocadownloadsecs">Sections</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-category.png" link="option=com_phocadownload&amp;view=phocadownloadcats">Categories</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-lic.png" link="option=com_phocadownload&amp;view=phocadownloadlics">Licenses</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-settings.png" link="option=com_phocadownload&amp;view=phocadownloadset">Settings</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-stat.png" link="option=com_phocadownload&amp;view=phocadownloadstat">Statistics</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-users.png" link="option=com_phocadownload&amp;view=phocadownloadusers">PHOCADOWNLOAD_USERS</menu>
+			<menu img="components/com_phocadownload/assets/images/icon-16-pdl-menu-info.png" link="option=com_phocadownload&amp;view=phocadownloadinfo">Info</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<files>
+			<filename>admin.phocadownload.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.bak</filename>
+			<filename>install.phocadownload.php</filename>
+			<filename>install.sql</filename>
+			<filename>phocadownload.xml</filename>
+			<filename>uninstall.phocadownload.php</filename>
+			<filename>uninstall.sql</filename>
+			<filename>assets/images/icon-16-edb-back.png</filename>
+			<filename>assets/images/icon-16-edb-category.png</filename>
+			<filename>assets/images/icon-16-edb-file.png</filename>
+			<filename>assets/images/icon-16-edb-play.png</filename>
+			<filename>assets/images/icon-16-edb-preview.png</filename>
+			<filename>assets/images/icon-16-edb-section.png</filename>
+			<filename>assets/images/icon-16-edb-sections.png</filename>
+			<filename>assets/images/icon-16-pdl-control-panel.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-category.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-files.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-info.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-lic.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-section.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-settings.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-stat.png</filename>
+			<filename>assets/images/icon-16-pdl-menu-users.png</filename>
+			<filename>assets/images/icon-16-pdl-menu.png</filename>
+			<filename>assets/images/icon-16-user-stat.png</filename>
+			<filename>assets/images/icon-32-approve.png</filename>
+			<filename>assets/images/icon-32-authorizeall.png</filename>
+			<filename>assets/images/icon-32-disapprove.png</filename>
+			<filename>assets/images/icon-32-reset.png</filename>
+			<filename>assets/images/icon-48-cat.png</filename>
+			<filename>assets/images/icon-48-file.png</filename>
+			<filename>assets/images/icon-48-info.png</filename>
+			<filename>assets/images/icon-48-lic.png</filename>
+			<filename>assets/images/icon-48-phoca.png</filename>
+			<filename>assets/images/icon-48-phocadownload.png</filename>
+			<filename>assets/images/icon-48-sec.png</filename>
+			<filename>assets/images/icon-48-set.png</filename>
+			<filename>assets/images/icon-48-stat.png</filename>
+			<filename>assets/images/icon-48-user-stat.png</filename>
+			<filename>assets/images/icon-48-users.png</filename>
+			<filename>assets/images/icon-file.png</filename>
+			<filename>assets/images/icon-folder.png</filename>
+			<filename>assets/images/icon-phoca-logo.png</filename>
+			<filename>assets/images/icon-up.png</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/images/install.png</filename>
+			<filename>assets/images/logo-phoca.png</filename>
+			<filename>assets/images/logo.png</filename>
+			<filename>assets/images/spacer.gif</filename>
+			<filename>assets/images/update.png</filename>
+			<filename>assets/images/upgrade.png</filename>
+			<filename>assets/images/white-space.png</filename>
+			<filename>assets/index.html</filename>
+			<filename>assets/phocadownload.css</filename>
+			<filename>assets/upload/delete.png</filename>
+			<filename>assets/upload/mediamanager.css</filename>
+			<filename>assets/upload/mediamanager.js</filename>
+			<filename>assets/upload/swf.js</filename>
+			<filename>assets/upload/upload.png</filename>
+			<filename>assets/upload/uploader.js</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/phocadownload.php</filename>
+			<filename>controllers/phocadownloadcat.php</filename>
+			<filename>controllers/phocadownloadinfo.php</filename>
+			<filename>controllers/phocadownloadinstall.php</filename>
+			<filename>controllers/phocadownloadlic.php</filename>
+			<filename>controllers/phocadownloadlinkfile.php</filename>
+			<filename>controllers/phocadownloadsec.php</filename>
+			<filename>controllers/phocadownloadset.php</filename>
+			<filename>controllers/phocadownloadstat.php</filename>
+			<filename>controllers/phocadownloaduninstall.php</filename>
+			<filename>controllers/phocadownloadupload.php</filename>
+			<filename>controllers/phocadownloaduser.php</filename>
+			<filename>controllers/phocadownloadut.php</filename>
+			<filename>elements/index.html</filename>
+			<filename>elements/phocacategory.php</filename>
+			<filename>elements/phocadownloademail.php</filename>
+			<filename>elements/phocafile.php</filename>
+			<filename>elements/phocahead.php</filename>
+			<filename>elements/phocasection.php</filename>
+			<filename>elements/phocatext.php</filename>
+			<filename>elements/phocatextarea.php</filename>
+			<filename>help/en-GB/css/help.css</filename>
+			<filename>help/en-GB/css/index.html</filename>
+			<filename>help/en-GB/index.html</filename>
+			<filename>help/en-GB/screen.phocadownload.html</filename>
+			<filename>helpers/index.html</filename>
+			<filename>helpers/phocacp.php</filename>
+			<filename>helpers/phocadownload.php</filename>
+			<filename>helpers/phocadownloadupload.php</filename>
+			<filename>helpers/phocauserstat.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/phocadownload.php</filename>
+			<filename>models/phocadownloadcat.php</filename>
+			<filename>models/phocadownloadcats.php</filename>
+			<filename>models/phocadownloadlic.php</filename>
+			<filename>models/phocadownloadlics.php</filename>
+			<filename>models/phocadownloadlinkcat.php</filename>
+			<filename>models/phocadownloadlinkfile.php</filename>
+			<filename>models/phocadownloadlinksec.php</filename>
+			<filename>models/phocadownloadmanager.php</filename>
+			<filename>models/phocadownloads.php</filename>
+			<filename>models/phocadownloadsec.php</filename>
+			<filename>models/phocadownloadsecs.php</filename>
+			<filename>models/phocadownloadset.php</filename>
+			<filename>models/phocadownloadstat.php</filename>
+			<filename>models/phocadownloaduser.php</filename>
+			<filename>models/phocadownloadusers.php</filename>
+			<filename>models/phocadownloadut.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>tables/phocadownload.php</filename>
+			<filename>tables/phocadownloadcat.php</filename>
+			<filename>tables/phocadownloadlic.php</filename>
+			<filename>tables/phocadownloadsec.php</filename>
+			<filename>tables/phocadownloadset.php</filename>
+			<filename>views/index.html</filename>
+			<filename>views/phocadownload/index.html</filename>
+			<filename>views/phocadownload/tmpl/form.php</filename>
+			<filename>views/phocadownload/tmpl/form_text.php</filename>
+			<filename>views/phocadownload/tmpl/index.html</filename>
+			<filename>views/phocadownload/view.html.php</filename>
+			<filename>views/phocadownloadcat/index.html</filename>
+			<filename>views/phocadownloadcat/tmpl/form.php</filename>
+			<filename>views/phocadownloadcat/tmpl/index.html</filename>
+			<filename>views/phocadownloadcat/view.html.php</filename>
+			<filename>views/phocadownloadcats/index.html</filename>
+			<filename>views/phocadownloadcats/tmpl/default.php</filename>
+			<filename>views/phocadownloadcats/tmpl/index.html</filename>
+			<filename>views/phocadownloadcats/view.html.php</filename>
+			<filename>views/phocadownloadcp/index.html</filename>
+			<filename>views/phocadownloadcp/tmpl/default.php</filename>
+			<filename>views/phocadownloadcp/tmpl/index.html</filename>
+			<filename>views/phocadownloadcp/view.html.php</filename>
+			<filename>views/phocadownloadinfo/index.html</filename>
+			<filename>views/phocadownloadinfo/tmpl/default.php</filename>
+			<filename>views/phocadownloadinfo/tmpl/index.html</filename>
+			<filename>views/phocadownloadinfo/view.html.php</filename>
+			<filename>views/phocadownloadlic/index.html</filename>
+			<filename>views/phocadownloadlic/tmpl/form.php</filename>
+			<filename>views/phocadownloadlic/tmpl/index.html</filename>
+			<filename>views/phocadownloadlic/view.html.php</filename>
+			<filename>views/phocadownloadlics/index.html</filename>
+			<filename>views/phocadownloadlics/tmpl/default.php</filename>
+			<filename>views/phocadownloadlics/tmpl/index.html</filename>
+			<filename>views/phocadownloadlics/view.html.php</filename>
+			<filename>views/phocadownloadlinkcat/index.html</filename>
+			<filename>views/phocadownloadlinkcat/tmpl/default.php</filename>
+			<filename>views/phocadownloadlinkcat/tmpl/index.html</filename>
+			<filename>views/phocadownloadlinkcat/view.html.php</filename>
+			<filename>views/phocadownloadlinkfile/index.html</filename>
+			<filename>views/phocadownloadlinkfile/tmpl/default.php</filename>
+			<filename>views/phocadownloadlinkfile/tmpl/index.html</filename>
+			<filename>views/phocadownloadlinkfile/view.html.php</filename>
+			<filename>views/phocadownloadlinks/index.html</filename>
+			<filename>views/phocadownloadlinks/tmpl/default.php</filename>
+			<filename>views/phocadownloadlinks/tmpl/index.html</filename>
+			<filename>views/phocadownloadlinks/view.html.php</filename>
+			<filename>views/phocadownloadlinksec/index.html</filename>
+			<filename>views/phocadownloadlinksec/tmpl/default.php</filename>
+			<filename>views/phocadownloadlinksec/tmpl/index.html</filename>
+			<filename>views/phocadownloadlinksec/view.html.php</filename>
+			<filename>views/phocadownloadlinksecs/index.html</filename>
+			<filename>views/phocadownloadlinksecs/tmpl/default.php</filename>
+			<filename>views/phocadownloadlinksecs/tmpl/index.html</filename>
+			<filename>views/phocadownloadlinksecs/view.html.php</filename>
+			<filename>views/phocadownloadlinkytb/index.html</filename>
+			<filename>views/phocadownloadlinkytb/tmpl/default.php</filename>
+			<filename>views/phocadownloadlinkytb/tmpl/index.html</filename>
+			<filename>views/phocadownloadlinkytb/view.html.php</filename>
+			<filename>views/phocadownloadmanager/index.html</filename>
+			<filename>views/phocadownloadmanager/tmpl/default.php</filename>
+			<filename>views/phocadownloadmanager/tmpl/default_file.php</filename>
+			<filename>views/phocadownloadmanager/tmpl/default_folder.php</filename>
+			<filename>views/phocadownloadmanager/tmpl/default_up.php</filename>
+			<filename>views/phocadownloadmanager/tmpl/index.html</filename>
+			<filename>views/phocadownloadmanager/view.html.php</filename>
+			<filename>views/phocadownloads/index.html</filename>
+			<filename>views/phocadownloads/tmpl/default.php</filename>
+			<filename>views/phocadownloads/tmpl/index.html</filename>
+			<filename>views/phocadownloads/view.html.php</filename>
+			<filename>views/phocadownloadsec/index.html</filename>
+			<filename>views/phocadownloadsec/tmpl/form.php</filename>
+			<filename>views/phocadownloadsec/tmpl/index.html</filename>
+			<filename>views/phocadownloadsec/view.html.php</filename>
+			<filename>views/phocadownloadsecs/index.html</filename>
+			<filename>views/phocadownloadsecs/tmpl/default.php</filename>
+			<filename>views/phocadownloadsecs/tmpl/index.html</filename>
+			<filename>views/phocadownloadsecs/view.html.php</filename>
+			<filename>views/phocadownloadset/index.html</filename>
+			<filename>views/phocadownloadset/tmpl/default.php</filename>
+			<filename>views/phocadownloadset/tmpl/index.html</filename>
+			<filename>views/phocadownloadset/view.html.php</filename>
+			<filename>views/phocadownloadstat/index.html</filename>
+			<filename>views/phocadownloadstat/tmpl/default.php</filename>
+			<filename>views/phocadownloadstat/tmpl/index.html</filename>
+			<filename>views/phocadownloadstat/view.html.php</filename>
+			<filename>views/phocadownloadusers/index.html</filename>
+			<filename>views/phocadownloadusers/tmpl/default.php</filename>
+			<filename>views/phocadownloadusers/tmpl/index.html</filename>
+			<filename>views/phocadownloadusers/view.html.php</filename>
+			<filename>views/phocadownloadut/index.html</filename>
+			<filename>views/phocadownloadut/tmpl/default.php</filename>
+			<filename>views/phocadownloadut/tmpl/index.html</filename>
+			<filename>views/phocadownloadut/view.html.php</filename>
+		</files>
+
+		<!-- Only Development - copy ./front, ./language, ./other to admin area -->
+		<files>
+			<filename>language/en-GB/en-GB.com_phocadownload.ini</filename>
+			<filename>language/en-GB/en-GB.com_phocadownload.menu.ini</filename>
+			<filename>other/install_xml.php</filename>
+		</files>
+
+		<!-- Language -->
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocadownload.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocadownload.menu.ini</language>
+		</languages>
+
+	</administration>
+</install>

@@ -1,0 +1,282 @@
+DROP TABLE IF EXISTS `#__phocadownload_categories`;
+CREATE TABLE `#__phocadownload_categories` (
+  `id` int(11) NOT NULL auto_increment,
+  `parent_id` int(11) NOT NULL default 0,
+  `section` int(11) NOT NULL default 0,
+  `title` varchar(255) NOT NULL default '',
+  `name` varchar(255) NOT NULL default '',
+  `alias` varchar(255) NOT NULL default '',
+  `image` varchar(255) NOT NULL default '',
+  `image_position` varchar(30) NOT NULL default '',
+  `description` text,
+  `published` tinyint(1) NOT NULL default '0',
+  `checked_out` int(11) unsigned NOT NULL default '0',
+  `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `editor` varchar(50) default NULL,
+  `ordering` int(11) NOT NULL default '0',
+  `access` tinyint(3) unsigned NOT NULL default '0',
+  `uploaduserid` text,
+  `accessuserid` text,
+  `deleteuserid` text,
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  `count` int(11) NOT NULL default '0',
+  `params` text,
+  `metakey` text,
+  `metadesc` text,
+  PRIMARY KEY  (`id`),
+  KEY `cat_idx` (`section`,`published`,`access`),
+  KEY `idx_access` (`access`),
+  KEY `idx_checkout` (`checked_out`)
+) TYPE=MyISAM CHARACTER SET `utf8`;
+
+DROP TABLE IF EXISTS `#__phocadownload_sections`;
+CREATE TABLE `#__phocadownload_sections` (
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) NOT NULL default '',
+  `name` varchar(255) NOT NULL default '',
+  `alias` varchar(255) NOT NULL default '',
+  `image` text,
+  `scope` varchar(50) NOT NULL default '',
+  `image_position` varchar(30) NOT NULL default '',
+  `description` text,
+  `published` tinyint(1) NOT NULL default '0',
+  `checked_out` int(11) unsigned NOT NULL default '0',
+  `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `ordering` int(11) NOT NULL default '0',
+  `access` tinyint(3) unsigned NOT NULL default '0',
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  `count` int(11) NOT NULL default '0',
+  `params` text,
+  `metakey` text,
+  `metadesc` text,
+  PRIMARY KEY  (`id`),
+  KEY `idx_scope` (`scope`)
+) TYPE=MyISAM CHARACTER SET `utf8`;
+
+DROP TABLE IF EXISTS `#__phocadownload`;
+CREATE TABLE `#__phocadownload` (
+  `id` int(11) unsigned NOT NULL auto_increment,
+  `catid` int(11) NOT NULL default '0',
+  `sectionid` int(11) NOT NULL default '0',
+  `sid` int(11) NOT NULL default '0',
+  `owner_id` int(11) NOT NULL default 0,
+  `title` varchar(250) NOT NULL default '',
+  `alias` varchar(255) NOT NULL default '',
+  `filename` varchar(250) NOT NULL default '',
+  `filename_play` varchar(250) NOT NULL default '',
+  `filename_preview` varchar(250) NOT NULL default '',
+  `filesize` int(11) NOT NULL default 0,
+  `author` varchar(255) NOT NULL default '',
+  `author_email` varchar(255) NOT NULL default '',
+  `author_url` varchar(255) NOT NULL default '',
+  `license` varchar(255) NOT NULL default '',
+  `license_url` varchar(255) NOT NULL default '',
+  `image_filename` varchar(255) NOT NULL default '',
+  `image_filename_spec1` varchar(255) NOT NULL default '',
+  `image_filename_spec2` varchar(255) NOT NULL default '',
+  `image_download` varchar(255) NOT NULL default '',
+  `link_external` varchar(255) NOT NULL default '',
+  `description` text,
+  `version` varchar(255) NOT NULL default '',
+  `directlink` tinyint(1) NOT NULL default '0',
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  `publish_up` datetime NOT NULL default '0000-00-00 00:00:00',
+  `publish_down` datetime NOT NULL default '0000-00-00 00:00:00',
+  `hits` int(11) NOT NULL default '0',
+  `textonly` tinyint(1) NOT NULL default '0',
+  `published` tinyint(1) NOT NULL default '0',
+  `approved` tinyint(1) NOT NULL default '0',
+  `checked_out` int(11) NOT NULL default '0',
+  `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `ordering` int(11) NOT NULL default '0',
+  `access` tinyint(3) unsigned NOT NULL default '0',
+  `confirm_license` int(11) NOT NULL default '0',
+  `unaccessible_file` int(11) NOT NULL default '0',
+  `params` text,
+  `metakey` text,
+  `metadesc` text,
+  PRIMARY KEY  (`id`),
+  KEY `catid` (`catid`,`published`)
+) TYPE=MyISAM CHARACTER SET `utf8`;
+
+DROP TABLE IF EXISTS `#__phocadownload_settings`;
+CREATE TABLE `#__phocadownload_settings` (
+  `id` int(11) unsigned NOT NULL auto_increment,
+  `title` varchar(250) NOT NULL default '',
+  `value` text,
+  `values` text,
+  `type` varchar(50) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM CHARACTER SET `utf8`;
+
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'download_folder', 'phocadownload','', 'text');
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'allowed_file_types', '{hqx=application/mac-binhex40}
+{cpt=application/mac-compactpro}
+{csv=text/x-comma-separated-values}
+{bin=application/macbinary}
+{dms=application/octet-stream}
+{lha=application/octet-stream}
+{lzh=application/octet-stream}
+{exe=application/octet-stream}
+{class=application/octet-stream}
+{psd=application/x-photoshop}
+{so=application/octet-stream}
+{sea=application/octet-stream}
+{dll=application/octet-stream}
+{oda=application/oda}
+{pdf=application/pdf}
+{ai=application/postscript}
+{eps=application/postscript}
+{ps=application/postscript}
+{smi=application/smil}
+{smil=application/smil}
+{mif=application/vnd.mif}
+{xls=application/vnd.ms-excel{),
+{ppt=application/powerpoint}
+{wbxml=application/wbxml}
+{wmlc=application/wmlc}
+{dcr=application/x-director}
+{dir=application/x-director}
+{dxr=application/x-director}
+{dvi=application/x-dvi}
+{gtar=application/x-gtar}
+{gz=application/x-gzip}
+{php=application/x-httpd-php}
+{php4=application/x-httpd-php}
+{php3=application/x-httpd-php}
+{phtml=application/x-httpd-php}
+{phps=application/x-httpd-php-source}
+{js=application/x-javascript}
+{swf=application/x-shockwave-flash}
+{sit=application/x-stuffit}
+{tar=application/x-tar}
+{tgz=application/x-tar}
+{xhtml=application/xhtml+xml}
+{xht=application/xhtml+xml}
+{zip=application/x-zip}
+{mid=audio/midi}
+{midi=audio/midi}
+{mpga=audio/mpeg}
+{mp2=audio/mpeg}
+{mp3=audio/mpeg}
+{aif=audio/x-aiff}
+{aiff=audio/x-aiff}
+{aifc=audio/x-aiff}
+{ram=audio/x-pn-realaudio}
+{rm=audio/x-pn-realaudio}
+{rpm=audio/x-pn-realaudio-plugin}
+{ra=audio/x-realaudio}
+{rv=video/vnd.rn-realvideo}
+{wav=audio/x-wav}
+{bmp=image/bmp}
+{gif=image/gif}
+{jpeg=image/jpeg}
+{jpg=image/jpeg}
+{jpe=image/jpeg}
+{png=image/png}
+{tiff=image/tiff}
+{tif=image/tiff}
+{css=text/css}
+{html=text/html}
+{htm=text/html}
+{shtml=text/html}
+{txt=text/plain}
+{text=text/plain}
+{log=text/plain}
+{rtx=text/richtext}
+{rtf=text/rtf}
+{xml=text/xml}
+{xsl=text/xml}
+{mpeg=video/mpeg}
+{mpg=video/mpeg}
+{mpe=video/mpeg}
+{qt=video/quicktime}
+{mov=video/quicktime}
+{avi=video/x-msvideo}
+{flv=video/x-flv}
+{movie=video/x-sgi-movie}
+{doc=application/msword}
+{xl=application/excel}
+{eml=message/rfc822}', '', 'textarea');
+
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'disallowed_file_types', '','', 'textarea');
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'upload_maxsize', '3145728','', 'text');
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'enable_flash', 1,'{0=No}{1=Yes}', 'select');
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'absolute_path', '','', 'text');
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'description', '','', 'textareaeditor');
+
+
+
+
+-- Remove "--" by SQL queries which you want to run in your database (don't remove it by comments)
+-- UPDATE ONLY
+
+-- version 1.0.5
+-- ALTER TABLE `#__phocadownload` ADD `directlink` tinyint(1) NOT NULL default '0' AFTER `version`;
+
+-- version 1.0.6
+DROP TABLE IF EXISTS `#__phocadownload_user_stat`;
+CREATE TABLE `#__phocadownload_user_stat` (
+  `id` int(11) NOT NULL auto_increment,
+  `fileid` int(11) NOT NULL default '0',
+  `userid` int(11) NOT NULL default '0',
+  `count` int(11) NOT NULL default '0',
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  `published` tinyint(1) NOT NULL default '0',
+  `ordering` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM CHARACTER SET `utf8`;
+INSERT INTO `#__phocadownload_settings` VALUES (null, 'enable_user_statistics', 1,'{0=No}{1=Yes}', 'select');
+
+-- version 1.1.0
+DROP TABLE IF EXISTS `#__phocadownload_licenses`;
+CREATE TABLE `#__phocadownload_licenses` (
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) NOT NULL default '',
+  `alias` varchar(255) NOT NULL default '',
+  `description` text,
+  `checked_out` int(11) unsigned NOT NULL default '0',
+  `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `published` tinyint(1) NOT NULL default '0',
+  `ordering` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM CHARACTER SET `utf8`;
+
+
+
+-- version 1.1.0 UPDATE only
+-- ALTER TABLE `#__phocadownload` ADD `confirm_license` int(11) NOT NULL default '0' AFTER `access`;
+-- ALTER TABLE `#__phocadownload` ADD `unaccessible_file` int(11) NOT NULL default '0' AFTER `access`;
+-- ALTER TABLE `#__phocadownload_categories` ADD `date` datetime NOT NULL default '0000-00-00 00:00:00' AFTER `access`;
+-- ALTER TABLE `#__phocadownload_sections` ADD `date` datetime NOT NULL default '0000-00-00 00:00:00' AFTER `access`;
+-- INSERT INTO `#__phocadownload_settings` VALUES (null, 'absolute_path', '','', 'text');
+
+-- version 1.2.0 UPDATE only
+-- ALTER TABLE `#__phocadownload` ADD `filename_preview` varchar(250) NOT NULL default '' AFTER `filename`;
+-- ALTER TABLE `#__phocadownload` ADD `filename_play` varchar(250) NOT NULL default '' AFTER `filename`;
+-- ALTER TABLE `#__phocadownload` ADD `image_filename_spec1` varchar(250) NOT NULL default '' AFTER `image_filename`;
+-- ALTER TABLE `#__phocadownload` ADD `image_filename_spec2` varchar(250) NOT NULL default '' AFTER `image_filename`;
+
+-- version 1.3.0 UPDATE only
+-- ALTER TABLE `#__phocadownload` ADD `approved` tinyint(1) NOT NULL default '0' AFTER `published`;
+-- ALTER TABLE `#__phocadownload` ADD `owner_id` int(11) NOT NULL default '0' AFTER `id`;
+-- ALTER TABLE `#__phocadownload_categories` ADD `uploaduserid` text AFTER `access`;
+-- ALTER TABLE `#__phocadownload` ADD `filesize` int(11) NOT NULL default '0' AFTER `filename` ;
+
+-- version 1.3.2 UPDATE only
+-- ALTER TABLE `#__phocadownload` ADD `metakey` text AFTER `params`;
+-- ALTER TABLE `#__phocadownload_categories` ADD `metakey` text AFTER `params` ;
+-- ALTER TABLE `#__phocadownload_sections` ADD `metakey` text AFTER `params` ;  
+-- ALTER TABLE `#__phocadownload` ADD `metadesc` text AFTER `params`;
+-- ALTER TABLE `#__phocadownload_categories` ADD `metadesc` text AFTER `params` ; 
+-- ALTER TABLE `#__phocadownload_sections` ADD `metadesc` text AFTER `params` ;  
+
+-- version 1.3.4 UPDATE only
+-- INSERT INTO `#__phocadownload_settings` VALUES (null, 'description', '','', 'textareaeditor');
+-- ALTER TABLE `#__phocadownload` ADD `publish_up` datetime NOT NULL default '0000-00-00 00:00:00' AFTER `date`;
+-- ALTER TABLE `#__phocadownload` ADD `publish_down` datetime NOT NULL default '0000-00-00 00:00:00' AFTER `date`;
+
+-- version 1.3.5 UPDATE only
+-- ALTER TABLE `#__phocadownload_categories` ADD `deleteuserid` text AFTER `access` ;
+-- ALTER TABLE `#__phocadownload_categories` ADD `accessuserid` text AFTER `access` ;
+

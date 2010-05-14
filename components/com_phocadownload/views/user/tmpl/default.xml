@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="PHOCADOWNLOAD_USER_UPLOAD_LAYOUT">
+		<message>
+			<![CDATA[PHOCADOWNLOAD_USER_UPLOAD_LAYOUT_DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>PHOCADOWNLOAD_USER_UPLOAD_LAYOUT</name>
+		<description>PHOCADOWNLOAD_USER_UPLOAD_LAYOUT_DESC</description>
+		<params>
+			
+		</params>
+	</state>
+</metadata>

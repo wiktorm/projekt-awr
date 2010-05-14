@@ -1,0 +1,130 @@
+#phoca-update {
+	margin:0;
+	margin-top:10px;
+	padding-left:50px;
+	padding-top:14px;
+	height:45px;
+	width:270px;
+	background: url('images/update.png') 0 0 no-repeat;
+}
+#phoca-update a {
+	text-decoration:underline;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+div.icon-48-phocadownload {
+	background: url('images/icon-48-phocadownload.png') no-repeat left;
+}
+div.icon-48-info {
+	background: url('images/icon-48-info.png') no-repeat left;
+}
+div.icon-48-category {
+	background: url('images/icon-48-cat.png') no-repeat left;
+}
+
+div.icon-48-section {
+	background: url('images/icon-48-sec.png') no-repeat left;
+}
+div.icon-48-settings {
+	background: url('images/icon-48-set.png') no-repeat left;
+}
+div.icon-48-file {
+	background: url('images/icon-48-file.png') no-repeat left;
+}
+div.icon-48-statistics {
+	background: url('images/icon-48-stat.png') no-repeat left;
+}
+div.icon-48-userstat {
+	background: url('images/icon-48-user-stat.png') no-repeat left;
+}
+div.icon-48-license {
+	background: url('images/icon-48-lic.png') no-repeat left;
+}
+div.icon-48-users {
+	background: url('images/icon-48-users.png') no-repeat left;
+}
+span.icon-32-reset {
+	background: url('images/icon-32-reset.png') no-repeat left;
+}
+span.icon-32-authorizeall {
+	background: url('images/icon-32-authorizeall.png') no-repeat left;
+}
+
+
+span.icon-32-disapprove {
+	background: url('images/icon-32-disapprove.png') no-repeat left;
+}
+span.icon-32-approve {
+	background: url('images/icon-32-approve.png') no-repeat left;
+}
+
+/* Phoca Download Editor Button Plugin */
+#phocadownload-links .icon-16-edb-sections {
+	background: #fdfdfd url('images/icon-16-edb-sections.png') no-repeat 5px center;
+	list-style-type:none;
+	padding: 10px 10px 10px 30px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+#phocadownload-links .icon-16-edb-section {
+	background: #fdfdfd url('images/icon-16-edb-section.png') no-repeat  5px center;
+	list-style-type:none;
+	padding: 10px 10px 10px 30px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+#phocadownload-links .icon-16-edb-category {
+	background: #fdfdfd url('images/icon-16-edb-category.png') no-repeat  5px center;
+	list-style-type:none;
+	padding: 10px 10px 10px 30px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+#phocadownload-links .icon-16-edb-file {
+	background: #fdfdfd url('images/icon-16-edb-file.png') no-repeat 5px center;
+	list-style-type:none;
+	padding: 10px 10px 10px 30px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+#phocadownload-links .icon-16-edb-play {
+	background: #fdfdfd url('images/icon-16-edb-play.png') no-repeat 5px center;
+	list-style-type:none;
+	padding: 10px 10px 10px 30px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+#phocadownload-links .icon-16-edb-preview {
+	background: #fdfdfd url('images/icon-16-edb-preview.png') no-repeat 5px center;
+	list-style-type:none;
+	padding: 10px 10px 10px 30px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+#phocadownload-links a {
+	text-decoration:underline;
+}
+
+#phocadownload-links .icon-16-edb-back {
+	background: #fdfdfd url('images/icon-16-edb-back.png') no-repeat 5px center;
+	list-style-type:none;
+	padding: 10px 10px 10px 26px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+
+#phocadownload-links th a {
+	text-decoration:none;
+}
+
+.notapproved {
+	background:#FFC2C2;
+	border:1px solid #bf3030;
+	color: #a60000;
+	padding:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+}

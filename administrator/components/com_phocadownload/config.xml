@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_phocadownload/elements">
+	
+		<param name="@phocahead" type="phocahead" default="GENERAL SETTINGS LABEL" />
+		
+		<param name="filename_or_name" type="list" default="filename" label="Filename or Name" description="Filename or Name DESC">
+				<option value="filename">File Name</option>
+				<option value="title">Title</option>
+				<option value="filenametitle">File Name and Title</option>
+			</param>
+		
+		<param name="download_external_link" type="list" default="_self" label="External Download Link" description="External Download Link DESC">
+				<option value="_self">Self</option>
+				<option value="_blank">Blank</option>
+			</param>
+			
+		<param name="display_downloads" type="list" default="0" label="Display Downloads" description="Display Downloads DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="display_description" type="list" default="3" label="Display Description" description="Display Description DESC">
+				<option value="0">None</option>
+				<option value="1">Top</option>
+				<option value="2">Bottom</option>
+				<option value="3">Overlib</option>
+				<option value="4">Top and Overlib</option>
+				<option value="5">Bottom and Overlib</option>
+				<option value="6">Top with Detail and Overlib</option>
+				<option value="7">Bottom with Detail and Overlib</option>
+			</param>
+			
+		<param name="display_detail" type="list" default="1" label="Display Detail Button" description="Display Detail Button DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="display_new" default="0" size="10" type="phocatext" label="Display New Icon" description="Display New Icon DESC" />
+		<param name="display_hot" default="0" size="10" type="phocatext" label="Display Hot Icon" description="Display Hot Icon DESC" />
+		
+		<param name="display_most_download" type="list" default="1" label="Display Most Download Files" description="Display Most Download Files DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="display_file_view" type="list" default="0" label="PHOCADOWNLOAD_DISPLAY_FILE_VIEW" description="PHOCADOWNLOAD_DISPLAY_FILE_VIEW_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="display_date_type" type="list" default="0" label="PHOCADOWNLOAD_DISPLAY_DATE_TYPE" description="PHOCADOWNLOAD_DISPLAY_DATE_TYPE_DESC">
+				<option value="0">PHOCADOWNLOAD_DATABASE_TIME</option>
+				<option value="1">PHOCADOWNLOAD_FILE_FILEMTIME</option>
+				<option value="2">PHOCADOWNLOAD_FILE_FILECTIME</option>
+				<option value="3">PHOCADOWNLOAD_FILE_FILEATIME</option>
+			</param>
+			
+		<param name="@spacer" type="spacer" default="" label="" description="" />	
+			
+		<param name="download_metadesc" type="phocatextarea" label="PHOCADOWNLOAD_METADESC" description="PHOCADOWNLOAD_METADESC_DESC" rows="2" cols="26" default="" />
+<param name="download_metakey" type="phocatextarea" label="PHOCADOWNLOAD_METAKEY" description="PHOCADOWNLOAD_METAKEY_DESC" rows="2" cols="26" default="" />	
+			
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="section_ordering" type="list" default="1" label="Section Ordering" description="Section Ordering DESC">
+			<option value="1">Ordering ASC</option>
+			<option value="2">Ordering DESC</option>
+			<option value="3">Title ASC</option>
+			<option value="4">Title DESC</option>
+			<option value="5">Date ASC</option>
+			<option value="6">Date DESC</option>
+			<option value="7">Id ASC</option>
+			<option value="8">Id DESC</option>
+		</param>
+		
+		<param name="category_ordering" type="list" default="1" label="Category Ordering" description="Category Ordering DESC">
+			<option value="1">Ordering ASC</option>
+			<option value="2">Ordering DESC</option>
+			<option value="3">Title ASC</option>
+			<option value="4">Title DESC</option>
+			<option value="5">Date ASC</option>
+			<option value="6">Date DESC</option>
+			<option value="7">Id ASC</option>
+			<option value="8">Id DESC</option>
+		</param>
+		
+		<param name="file_ordering" type="list" default="1" label="File Ordering" description="File Ordering DESC">
+			<option value="1">Ordering ASC</option>
+			<option value="2">Ordering DESC</option>
+			<option value="3">Title ASC</option>
+			<option value="4">Title DESC</option>
+			<option value="5">Date ASC</option>
+			<option value="6">Date DESC</option>
+			<option value="7">Id ASC</option>
+			<option value="8">Id DESC</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="default_pagination" default="20" size="18" type="phocatext" label="Default Value Pagination" description="Default Value Pagination DESC" />
+		
+		<param name="pagination" default="5;10;15;20;50" size="18" type="phocatext" label="Phoca Download Pagination" description="Phoca Download Pagination DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="display_up_icon" type="list" default="1" label="Display Up Icon" description="Display Up Icon DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="enable_plugin_query" type="list" default="0" label="PHOCADOWNLOAD_ENABLE_PLUGIN_QUERY" description="PHOCADOWNLOAD_ENABLE_PLUGIN_QUERY_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@phocahead" type="phocahead" default="PHOCADOWNLOAD_COMMENTS_SETTINGS_LABEL" />	
+<param name="display_category_comments" type="list" default="0" label="PHOCADOWNLOAD_DISPLAY_CATEGORY_COMMENTS" description="PHOCADOWNLOAD_DISPLAY_CATEGORY_COMMENTS_DESC">
+	<option value="0">No</option>
+	<option value="1">JComments</option>
+</param>
+<param name="display_file_comments" type="list" default="0" label="PHOCADOWNLOAD_DISPLAY_FILE_COMMENTS" description="PHOCADOWNLOAD_DISPLAY_FILE_COMMENTS_DESC">
+	<option value="0">No</option>
+	<option value="1">JComments</option>
+</param>
+		
+			
+		<param name="@phocahead" type="phocahead" default="THEME SETTINGS LABEL" />	
+		
+		<param name="file_icon_size" type="list" default="16" label="File Icon Size" description="File Icon Size DESC">
+			<option value="16">16px</option>
+			<option value="32">32px</option>
+			<option value="48">48px</option>
+			<option value="64">64px</option>
+		</param>
+		<param name="file_icon_size_md" type="list" default="16" label="File Icon Size MD" description="File Icon Size MD DESC">
+			<option value="16">16px</option>
+			<option value="32">32px</option>
+			<option value="48">48px</option>
+			<option value="64">64px</option>
+		</param>
+		
+		<param name="button_style" type="list" default="" label="Button Style" description="Button Style DESC">
+			<option value="">Default</option>
+			<option value="rc">Rounded Corners</option>
+		</param>
+
+		
+		<param name="theme" type="list" default="phocadownload-grey" label="Theme" description="Theme DESC">
+				<option value="phocadownload-grey">Grey</option>
+				<option value="phocadownload-grey-default">Grey Default</option>
+			</param>
+			
+		<param name="@phocahead" type="phocahead" default="SECTIONS SETTINGS LABEL" />
+			
+		<param name="display_num_doc_secs" type="list" default="0" label="Display Num Doc Sections" description="Display Num Doc Sections DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		<param name="display_num_doc_secs_header" type="list" default="1" label="Display Num Doc Sections Header" description="Display Num Doc Sections Header DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="@phocahead" type="phocahead" default="FILE SETTINGS LABEL" />
+			
+		<param name="license_box_height" default="300" size="10" type="phocatext" label="License Box Height" description="License Box Height DESC" />
+
+		<param name="@phocahead" type="phocahead" default="PLAY SETTINGS LABEL" />
+		<param name="display_play" type="list" default="0" label="Display Play Button" description="Display Play Button DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="player_width" default="328" size="10" type="phocatext" label="Player Width" description="Player Width DESC" />
+		<param name="player_height" default="200" size="10" type="phocatext" label="Player Height" description="Player Height DESC" />
+		<param name="player_mp3_height" default="30" size="10" type="phocatext" label="Player MP3 Height" description="Player MP3 Height DESC" />
+		
+		<param name="play_popup_window" type="list" default="0" label="Play Popup Window" description="Play Popup Window Desc">
+			<option value="1">Standard Popup Window</option>
+			<option value="0">ModalBox</option>
+		</param>
+		
+		
+		<param name="@phocahead" type="phocahead" default="PREVIEW SETTINGS LABEL" />
+		<param name="display_preview" type="list" default="0" label="Display Preview Button" description="Display Preview Button DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="preview_width" default="640" size="10" type="phocatext" label="Preview Width" description="Preview Width DESC" />
+		<param name="preview_height" default="480" size="10" type="phocatext" label="Preview Height" description="Preview Height DESC" />
+		
+		<param name="preview_popup_window" type="list" default="0" label="Preview Popup Window" description="Preview Popup Window Desc">
+			<option value="1">Standard Popup Window</option>
+			<option value="0">ModalBox</option>
+		</param>
+		
+		<param name="@phocahead" type="phocahead" default="PHOCADOWNLOAD_USER_UPLOAD_SETTINGS LABEL" />
+<param name="enable_user_cp" type="list" default="0" label="PHOCADOWNLOAD_USER_UPLOAD_ENABLE" description="PHOCADOWNLOAD_USER_UPLOAD_ENABLE_DESC">
+	<option value="1">Yes</option>
+	<option value="0">No</option>
+</param>
+<param name="user_files_max_count" type="phocatext" size="20" default="5" label="PHOCADOWNLOAD_MAX_COUNT_USER_FILES" description="PHOCADOWNLOAD_MAX_COUNT_USER_FILES_DESC" />
+
+<param name="user_files_max_size" type="phocatext" size="20" default="20971520" label="PHOCADOWNLOAD_MAX_SIZE_USER_FILES" description="PHOCADOWNLOAD_MAX_SIZE_USER_FILES_DESC" />
+<param name="user_file_upload_size" type="phocatext" size="20" default="3145728" label="PHOCADOWNLOAD_USER_FILE_UPLOAD_SIZE" description="PHOCADOWNLOAD_USER_FILE_UPLOAD_SIZE_DESC" />
+
+<param name="enable_user_upload_approve" type="list" default="0" label="PHOCADOWNLOAD_ENABLE_APPROVE_USERFILE" description="PHOCADOWNLOAD_ENABLE_APPROVE_USERFILE_DESC">
+	<option value="1">Yes</option>
+	<option value="0">No</option>
+</param>
+
+	<param name="@phocahead" type="phocahead" default="PHOCADOWNLOAD_EMAIL_SETTINGS LABEL" />
+
+	<param name="send_mail_download" type="phocadownloademail" section="com_phocadownload" default="0" label="PHOCADOWNLOAD_SEND_EMAIL_DOWNLOAD" description="PHOCADOWNLOAD_SEND_EMAIL_DOWNLOAD_DESC" />
+	<param name="send_mail_upload" type="phocadownloademail" section="com_phocadownload" default="0" label="PHOCADOWNLOAD_SEND_EMAIL_UPLOAD" description="PHOCADOWNLOAD_SEND_EMAIL_UPLOAD_DESC" />
+	
+	</params>
+</config>

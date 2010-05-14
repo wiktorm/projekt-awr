@@ -1,0 +1,515 @@
+/* http://www.phoca.cz/ */
+.phoca-dl-hr {
+	border-bottom: 3px solid #e9e9e9;
+	margin-bottom: 10px;
+}
+
+#phoca-dl-sections-box a img {
+	border:		0px;
+	padding:	0;
+	margin:		0;
+}
+
+/* sections box */
+#phoca-dl-sections-box div.pd-desc {
+	margin: 10px 0 10px 0;
+}
+#phoca-dl-sections-box div.pd-sections {
+	width:		33%;
+	position:	relative;
+	float:		left;
+	background: url('images/br.png') right bottom no-repeat;
+	margin:		0px;
+	padding:	0px;
+}
+#phoca-dl-sections-box div.pd-sections div {
+	background: url('images/bl.png') left bottom no-repeat;
+}
+
+#phoca-dl-sections-box div.pd-sections div div{
+	background: url('images/tr.png') right top no-repeat;
+}
+
+#phoca-dl-sections-box div.pd-sections div div div{
+	background: url('images/tl.png') left top no-repeat;
+	padding:	10px;
+}
+
+#phoca-dl-sections-box div.pd-sections div div div h3 {
+	margin:			0px;
+	padding:		5px;
+	margin-bottom:	7px;
+	background: 	#fafafa;
+	border:			1px solid #e9e9e9;
+}
+
+
+#phoca-dl-section-box .pd-section,
+#phoca-dl-category-box .pd-category,
+#phoca-dl-file-box .pd-file {
+	margin:		5px;
+}
+
+#phoca-dl-file-box .pd-file-details {
+	border: 0;
+}
+
+
+/* sections, section */
+#phoca-dl-sections-box .pd-category,
+#phoca-dl-section-box .pd-category {
+	padding-left:	20px;
+	background: transparent url('images/folder.png') 0 center no-repeat;
+	
+}
+
+/* section, category, file */ 
+
+#phoca-dl-section-box .pd-section h3,
+#phoca-dl-category-box .pd-category h3,
+#phoca-dl-file-box .pd-file h3{
+	margin:			0;
+	padding:		5px;
+	background: 	#fafafa;
+	border:			1px solid #e9e9e9;
+	margin-bottom:	7px;
+}
+
+#phoca-dl-section-box .pd-section div.pdtop,
+#phoca-dl-category-box .pd-category div.pdtop,
+#phoca-dl-file-box .pd-file div.pdtop {
+	float:		right;
+	position:	relative;
+	width:		16px;
+	margin-top:	5px;
+	margin-right:7px;
+}
+#phoca-dl-sections-box  h3 small,
+#phoca-dl-section-box .pd-section h3 small,
+#phoca-dl-category-box .pd-category h3 small,
+#phoca-dl-file-box .pd-file h3 small {
+	color:		#BF6070;
+	font-size:	small;
+	font-weight:normal;
+}
+
+#phoca-dl-sections-box  h3 a{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+/* icon next to file*/
+.phoca-dl-file-box-mod .pd-document16,
+#phoca-dl-file-box .pd-document16,
+#phoca-dl-category-box .pd-document16{
+	padding-left:20px;
+	background: url('images/icon-document-16.png') 0px center no-repeat;
+	height:16px;
+    line-height:16px;
+}
+#phoca-dl-most-viewed-box .pd-document16  {
+	padding-left:20px;
+	background: url('images/icon-document-16.png') 0px center no-repeat;
+}
+.phoca-dl-file-box-mod .pd-document32,
+#phoca-dl-file-box .pd-document32,
+#phoca-dl-category-box .pd-document32,
+#phoca-dl-most-viewed-box .pd-document32 {
+	background: url('images/icon-document-32.png')  0px center no-repeat;
+	height:32px;
+    line-height:32px;
+	padding-left:36px;
+}
+.phoca-dl-file-box-mod .pd-document48,
+#phoca-dl-file-box .pd-document48,
+#phoca-dl-category-box .pd-document48,
+#phoca-dl-most-viewed-box .pd-document48 {
+	background: url('images/icon-document-48.png') 0px center no-repeat;
+	height:48px;
+    line-height:48px;
+	padding-left:52px;
+}
+.phoca-dl-file-box-mod .pd-document64,
+#phoca-dl-file-box .pd-document64,
+#phoca-dl-category-box .pd-document64,
+#phoca-dl-most-viewed-box .pd-document64 {
+	background: url('images/icon-document-64.png')  0px center no-repeat;
+	height:64px;
+    line-height:64px;
+	padding-left:70px;
+}
+
+
+#phoca-dl-category-box table {
+	border-collapse:collapse;
+}
+
+#phoca-dl-category-box table tr {
+	border-collapse:collapse;
+}
+
+#phoca-dl-category-box table tr td.pdfile {
+	border-collapse:collapse;
+	border-bottom:1px dotted #cccccc;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+#phoca-dl-category-box table tr td.textonly {
+	border-collapse:	collapse;
+	border-bottom:		0px;
+	padding-top:		15px;
+	padding-bottom:		15px;
+}
+
+/* BUTTON - DOWNLOAD */
+#phoca-dl-category-box .pddownload {
+	border-top:		1px solid #00CC00;
+	border-right:	1px solid #008F00;
+	border-bottom:	1px solid #008F00;
+	border-left:	1px solid #00CC00;
+	margin:			1px 0px 1px 3px;
+	background: 	#008F00 url('images/bg-download.png') 0 0 repeat-x;
+	
+}
+#phoca-dl-category-box .pddownload div {
+	border:			1px solid #fff;
+	background: 	transparent url('images/icon-download.png') 3px center no-repeat;
+	padding:		3px 10px 3px 25px;
+}
+#phoca-dl-category-box .pddownload div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+
+/* BUTTON - DOWNLOAD RC */
+#phoca-dl-category-box .pddownloadrc {
+	margin:			0px 1px 0px 1px;
+	height:			35px;
+	line-height:	33px;
+	background: 	#008F00 url('images/button-download-l.png') 0 0 no-repeat;
+	
+}
+#phoca-dl-category-box .pddownloadrc div {
+	background: 	transparent url('images/button-download-r.png') 100% 0 no-repeat;
+	padding:		0px 12px 0px 25px;
+	height:			35px;
+	line-height:	33px;
+}
+#phoca-dl-category-box .pddownloadrc div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+
+/* BUTTON - DETAIL */
+#phoca-dl-category-box .pddetails{
+	border-top:		1px solid #FFB200;
+	border-right:	1px solid #B37D00;
+	border-bottom:	1px solid #B37D00;
+	border-left:	1px solid #FFB200;
+	margin:			1px 0px 1px 3px;
+	background: 	#B37D00 url('images/bg-details.png') 0 0 repeat-x;
+	
+}
+#phoca-dl-category-box .pddetails div {
+	border:			1px solid #fff;
+	background: 	transparent url('images/icon-details.png') 3px center no-repeat;
+	padding:		3px 10px 3px 25px;
+}
+#phoca-dl-category-box .pddetails div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+/* BUTTON - DETAIL RC */
+#phoca-dl-category-box .pddetailsrc {
+	margin:			0px 1px 0px 1px;
+	height:			35px;
+	line-height:	33px;
+	background: 	#008F00 url('images/button-detail-l.png') 0 0 no-repeat;
+	
+}
+#phoca-dl-category-box .pddetailsrc div {
+	background: 	transparent url('images/button-detail-r.png') 100% 0 no-repeat;
+	padding:		0px 12px 0px 25px;
+	height:			35px;
+	line-height:	33px;
+}
+#phoca-dl-category-box .pddetailsrc div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+
+/* BUTTON - PLAY */
+#phoca-dl-category-box .pdplay {
+	border-top:		1px solid #ff2b61;
+	border-right:	1px solid #b2002e;
+	border-bottom:	1px solid #b2002b;
+	border-left:	1px solid #ff2b61;
+	margin:			1px 0px 1px 3px;
+	background: 	#b2002b url('images/bg-play.png') 0 0 repeat-x;
+	
+}
+#phoca-dl-category-box .pdplay div {
+	border:			1px solid #fff;
+	background: 	transparent url('images/icon-play.png') 3px center no-repeat;
+	padding:		3px 10px 3px 25px;
+}
+#phoca-dl-category-box .pdplay div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+
+/* BUTTON - PLAY RC */
+#phoca-dl-category-box .pdplayrc {
+	margin:			0px 1px 0px 1px;
+	height:			35px;
+	line-height:	33px;
+	background: 	#008F00 url('images/button-play-l.png') 0 0 no-repeat;
+	
+}
+#phoca-dl-category-box .pdplayrc div {
+	background: 	transparent url('images/button-play-r.png') 100% 0 no-repeat;
+	padding:		0px 12px 0px 25px;
+	height:			35px;
+	line-height:	33px;
+}
+#phoca-dl-category-box .pdplayrc div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+
+/* BUTTON - PREVIEW */
+#phoca-dl-category-box .pdpreview {
+	border-top:		1px solid #2ba7ff;
+	border-right:	1px solid #0068b2;
+	border-bottom:	1px solid #0068b2;
+	border-left:	1px solid #2ba7ff;
+	margin:			1px 0px 1px 3px;
+	background: 	#0068b2 url('images/bg-preview.png') 0 0 repeat-x;
+	
+}
+#phoca-dl-category-box .pdpreview div {
+	border:			1px solid #fff;
+	background: 	transparent url('images/icon-preview.png') 3px center no-repeat;
+	padding:		3px 10px 3px 25px;
+}
+#phoca-dl-category-box .pdpreview div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+
+/* BUTTON - PLAY RC */
+#phoca-dl-category-box .pdpreviewrc {
+	margin:			0px 1px 0px 1px;
+	height:			35px;
+	line-height:	33px;
+	background: 	#008F00 url('images/button-preview-l.png') 0 0 no-repeat;
+	
+}
+#phoca-dl-category-box .pdpreviewrc div {
+	background: 	transparent url('images/button-preview-r.png') 100% 0 no-repeat;
+	padding:		0px 12px 0px 25px;
+	height:			35px;
+	line-height:	33px;
+}
+#phoca-dl-category-box .pdpreviewrc div a {
+	color:			#fff;
+	font-weight:	bold;
+}
+
+
+#phoca-dl-category-box h4, #overDiv h4 {
+	margin:			2px 0;
+	padding:		2px 0;
+}
+
+#phoca-dl-most-viewed-box small {
+	color:			#cccccc;
+	font-size:		small;
+}
+
+#phoca-dl-most-viewed-box .pd-documents {
+	margin:			5px;
+}
+
+/* Plugin */
+#phoca-dl-category-box-plugin .pd-document {
+	padding-left:	20px;
+	background: 	url('images/document.png') 0 center no-repeat;
+	text-align:		left;
+	padding-top:	4px;
+	padding-bottom:	4px;
+	
+}
+
+/* Module */
+.phoca-dl-sections-box-module .pd-sections {
+	color:			#BF6070;
+	
+}
+
+.phocadownload-navigation {
+	padding:		2px;
+	border:		 	1px dotted #D6D6D6;
+	width:			6em;
+	position:		relative;
+	float:			right;
+	text-align:		center;
+	margin-left:	5px;
+}
+
+.phocadownload-navigation .navigation-text {
+	color:				#BF6070;
+	background-color:	#D6D6D6;
+	padding:			2px;
+	margin-bottom:		3px;
+	font-size:			10px;
+	text-align:			center;
+}
+
+#phoca-dl-license {
+
+	border: 1px solid #ccc;
+	background: #f5f5f5;
+	overflow: auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.pd-pagination {
+	margin-top:20px;
+}
+
+.pd-float {
+	position:relative;
+	float:left;
+	margin:0px 3px;
+}
+
+
+
+#phocadownload-upload .comment-input{
+	width: 98%;
+}
+
+#phocadownload-upload .comment-input2 {
+	width: 40px;
+	border:0px;
+	font-weight:bold;
+}
+
+/* tabs */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+
+dl.tabs {
+	float: left;
+	margin: 10px 0 -1px 0;
+	z-index: 50;
+	
+}
+
+dl.tabs dt {
+	float: left;
+	padding: 4px 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left: 3px;
+	background: #f0f0f0;
+	color: #666;
+	
+}
+
+dl.tabs dt.open {
+	background: #ffffff;
+	border-bottom: 1px solid #ffffff;
+	z-index: 100;
+	color: #000;
+	
+}
+
+div.current {
+	clear: both;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+	background: #ffffff;
+	
+}
+
+div.current dd {
+	padding: 0;
+	margin: 0;
+}
+
+#loading-label-file{
+	text-align:center;
+	display:none;
+}
+
+/** Table styles **/
+
+#phocadownload-upload  table.adminlist {
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #e7e7e7;
+	color: #666;
+}
+
+#phocadownload-upload  .pagination {
+	margin:0;
+	padding:0;
+	display:inline;
+}
+
+#phocadownload-upload  table.adminlist td,
+#phocadownload-upload  table.adminlist th { 
+	padding: 4px;
+}
+
+#phocadownload-upload  table.adminlist thead th {
+	text-align: center;
+	background: #f0f0f0;
+	color: #666;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #fff;
+}
+
+#phocadownload-upload  table.adminlist thead a:hover { text-decoration: none; }
+
+#phocadownload-upload  table.adminlist thead th img { vertical-align: middle; }
+
+#phocadownload-upload  table.adminlist tbody th { font-weight: bold; }
+
+#phocadownload-upload  table.adminlist tbody tr						{ background-color: #fff;  text-align: left; }
+#phocadownload-upload  table.adminlist tbody tr.row1 					{ background: #f9f9f9; border-top: 1px solid #fff; }
+
+#phocadownload-upload  table.adminlist tbody tr.row0:hover td,
+#phocadownload-upload  table.adminlist tbody tr.row1:hover td { background-color: #ffd ; }
+
+#phocadownload-upload  table.adminlist tbody tr td 	   { height: 25px; background: #fff; border: 1px solid #fff; }
+
+#phocadownload-upload  table.adminlist tbody tr.row1 td { background: #f9f9f9; border-top: 1px solid #FFF; }
+
+#phocadownload-upload  table.adminlist tfoot tr { text-align: center;  color: #333; }
+ 
+#phocadownload-upload  table.adminlist tfoot td,
+#phocadownload-upload  table.adminlist tfoot th { background-color: #f3f3f3; border-top: 1px solid #999; text-align: center; }
+
+#phocadownload-upload  table.adminlist td.order		{ text-align: center; white-space: nowrap; }
+
+#phocadownload-upload  table.adminlist td.order span { float: left; display: block; width: 20px; text-align: center; }
+
+.pd-error,
+.error {
+	background:#FFC2C2;
+	border:1px solid #bf3030;
+	color: #a60000;
+	padding:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+

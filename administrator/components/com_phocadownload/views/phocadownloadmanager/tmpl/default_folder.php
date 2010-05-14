@@ -1,0 +1,3 @@
+<?php defined('_JEXEC') or die('Restricted access'); ?>
+
+<div><a href="index.php?option=com_phocadownload&amp;view=phocadownloadmanager&amp;manager=<?php echo $this->manager;?>&amp;tmpl=component&amp;folder=<?php echo $this->_tmp_folder->path_with_name_relative_no; ?>"><?php echo JHTML::_( 'image.administrator', 'components/com_phocadownload/assets/images/icon-folder.png', '','', '', JText::_('Open'), 'title="'.JText::_('Open').'"'); ?></a> <a href="index.php?option=com_phocadownload&amp;view=phocadownloadmanager&amp;manager=<?php echo $this->manager;?>&amp;tmpl=component&amp;folder=<?php echo $this->_tmp_folder->path_with_name_relative_no; ?>"><?php echo $this->_tmp_folder->name;?></a></div>
