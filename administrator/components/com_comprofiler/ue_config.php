@@ -1,55 +1,45 @@
 <?php
-/**
-* @version $Id: ue_config_first.php 916 2010-03-02 00:10:48Z beat $
-*/
-$ueConfig['this_is_default_config']='1';
 $ueConfig['name_style']='1';
-$ueConfig['name_format']='3';
-$ueConfig['date_format']='m/d/Y';
+$ueConfig['name_format']='2';
+$ueConfig['date_format']='d-m-Y';
 $ueConfig['calendar_type']='2';
-$ueConfig['allow_email_display']='3';
-$ueConfig['allow_email_replyto']='1';
+$ueConfig['allow_email_display']='2';
+$ueConfig['allow_email_replyto']='2';
 $ueConfig['allow_email']='1';
 $ueConfig['allow_website']='1';
 $ueConfig['allow_onlinestatus']='1';
 $ueConfig['icons_display']='7';
-$ueConfig['reg_admin_allowcbregistration']='0';
+$ueConfig['login_type']='1';
+$ueConfig['reg_admin_allowcbregistration']='1';
 $ueConfig['emailpass']='0';
-$ueConfig['reg_admin_approval']='0';
+$ueConfig['reg_admin_approval']='1';
 $ueConfig['reg_confirmation']='1';
-$ueConfig['reg_username_checker']='0';
+$ueConfig['reg_username_checker']='1';
 $ueConfig['reg_email_checker']='0';
 $ueConfig['reg_show_login_on_page']='0';
-$ueConfig['reg_email_name']='User Registration';
-$ueConfig['reg_email_from']='';
-$ueConfig['reg_email_replyto']='registration@whatever';
-$ueConfig['reg_pend_appr_sub']='Your Registration is Pending Approval';
-$ueConfig['reg_pend_appr_msg']='Greetings [NAME],
-Thank you for applying for registration with us. We have
-received your request and we will process it as soon as you
-confirm your email address by clicking on the following
-hyperlink:
+$ueConfig['reg_email_name']='Sekcja Szybowcowa';
+$ueConfig['reg_email_from']='szybowce@nwk.nazwa.pl';
+$ueConfig['reg_email_replyto']='szybowce@nwk.nazwa.pl';
+$ueConfig['reg_pend_appr_sub']='Rejestracja oczekuje na zatwierdzenie';
+$ueConfig['reg_pend_appr_msg']='Witaj [NAME],
+
+Otrzymaliśmy Twoje zgłoszenie i rozpatrzymy je gdy tylko potwierdzisz swój adres email klikając w poniższy link:
 [CONFIRM]
-Once your email address is confirmed our moderators will be
-notified to continue the activation process.
-You will be notified by email of the progress of your registration process.
+Otwarcie Twojego konta wymaga akceptacji moderatora. Informację o wynikach otrzymasz pocztą elektroniczną.
+
+Pozdrawiamy,
+Sekcja Szybowcowa Aeroklubu Wrocławskiego';
+$ueConfig['reg_welcome_sub']='Otwarcie konta';
+$ueConfig['reg_welcome_msg']='Witaj [NAME],
+
+Twoje zgłoszenie zostało zaakceptowane, a konto aktywowane:
+
 [DETAILS]
-Kind Regards,
-Website Administration Team';
-$ueConfig['reg_welcome_sub']='New User Details';
-$ueConfig['reg_welcome_msg']='Welcome [NAME],
-Your application has been approved by our administration team.
-Your account with the following details:
-[DETAILS]
-has been activated.
-We welcome you to our online community and trust that together
-we will grow.
-Enjoy the experience!
-Kind Regards,
-Website Administration Team';
-$ueConfig['reg_show_icons_explain']='3';
+Pozdrawiamy,
+Sekcja Szybowcowa Aeroklubu Wrocławskiego';
+$ueConfig['reg_show_icons_explain']='0';
 $ueConfig['reg_intro_msg']='';
-$ueConfig['reg_conclusion_msg']='';
+$ueConfig['reg_conclusion_msg']='<p>Strona jest otwarta dla członków oraz sympatyków Aeroklubu Wrocławskiego latającyh na naszym lotnisku</p>';
 $ueConfig['reg_enable_toc']='0';
 $ueConfig['reg_toc_url']='index.php?option=com_content&task=view&id=18';
 $ueConfig['reg_first_visit_url']='index.php?option=com_comprofiler';
@@ -63,12 +53,12 @@ $ueConfig['templatedir']='default';
 $ueConfig['left2colsWidth']='50';
 $ueConfig['left3colsWidth']='32';
 $ueConfig['right3colsWidth']='32';
-$ueConfig['showEmptyTabs']='1';
+$ueConfig['showEmptyTabs']='0';
 $ueConfig['showEmptyFields']='1';
 $ueConfig['emptyFieldsText']='-';
 $ueConfig['nesttabs']='0';
 $ueConfig['xhtmlComply']='1';
-$ueConfig['frontend_userparams']='1';
+$ueConfig['frontend_userparams']='0';
 $ueConfig['html_filter_allowed_tags']='';
 $ueConfig['im_path']='auto';
 $ueConfig['netpbm_path']='auto';
@@ -76,17 +66,17 @@ $ueConfig['conversiontype']='4';
 $ueConfig['allowAvatar']='1';
 $ueConfig['allowAvatarUpload']='1';
 $ueConfig['avatarResizeAlways']='1';
-$ueConfig['allowAvatarGallery']='1';
+$ueConfig['allowAvatarGallery']='0';
 $ueConfig['avatarHeight']='500';
 $ueConfig['avatarWidth']='200';
 $ueConfig['avatarSize']='2000';
 $ueConfig['thumbHeight']='86';
 $ueConfig['thumbWidth']='60';
-$ueConfig['imageApproverGid']='24';
+$ueConfig['imageApproverGid']='23';
 $ueConfig['allowModUserApproval']='1';
-$ueConfig['moderatorEmail']='1';
-$ueConfig['allowUserReports']='1';
-$ueConfig['avatarUploadApproval']='1';
+$ueConfig['moderatorEmail']='0';
+$ueConfig['allowUserReports']='0';
+$ueConfig['avatarUploadApproval']='0';
 $ueConfig['allowModeratorsUserEdit']='0';
 $ueConfig['allowUserBanning']='1';
 $ueConfig['allowConnections']='0';
@@ -98,5 +88,5 @@ $ueConfig['autoAddConnections']='1';
 $ueConfig['connection_categories']='Friend
 Co Worker';
 $ueConfig['noVersionCheck']='0';
-$ueConfig['version']='1.2.1';
+$ueConfig['version']='1.2.2';
 ?>

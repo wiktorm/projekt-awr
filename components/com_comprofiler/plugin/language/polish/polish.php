@@ -211,7 +211,7 @@ DEFINE ('_UE_SEARCH','Znajdź użytkownika');
 DEFINE ('_UE_ENTER_EMAIL','Wpisz email użytkownika, nazwę lub login');
 DEFINE ('_UE_SEARCH_BUTTON','Szukaj');
 DEFINE ('_UE_SHOW_ALL','Pokaż wszystkich użytkowników');
-DEFINE ('_UE_NAME','Nazwa własna');
+DEFINE ('_UE_NAME','Imię i nazwisko');
 DEFINE ('_UE_UL_USERNAME','Nazwa - login');
 DEFINE ('_UE_USERTYPE','Typ (grupa)');
 DEFINE ('_UE_VIEWPROFILE','Pokaż profil');
@@ -386,7 +386,7 @@ DEFINE('_UE_SENDEMAILNOTICE',"------ UWAGA: ------\r\n\r\nTo jest wiadomość od
 DEFINE('_UE_SENDEMAILNOTICE_REPLYTO',"\r\n\r\nGdy odpowiadasz, sprawdź uważnie, czy adres email %s to %s.");
 DEFINE('_UE_SENDEMAILNOTICE_DISCLAIMER',"\r\n\r\nWydawca witryny %s nie może brać odpowiedzialności za zawartość tego listu.");
 DEFINE('_UE_SENDEMAILNOTICE_MESSAGEHEADER',"\r\n\r\n\r\n------ Wiadomość od %s do Ciebie: ------\r\n\r\n");
-DEFINE('_UE_SENDPMSNOTICE','UWAGA: Ta wiadomość została wygenerowana automatycznie przez system kontaktów. Możesz na nią bez kłopotu odpowiedzieć.');
+DEFINE('_UE_SENDPMSNOTICE','-- \r\nUWAGA: Ta wiadomość została wygenerowana automatycznie przez system kontaktów. Możesz na nią bez kłopotu odpowiedzieć.');
 DEFINE('_UE_SENDEMAIL','Wyślij list');
 DEFINE('_UE_SENTEMAILSUCCESS','Twój list został pomyślnie wysłany!');
 DEFINE('_UE_SENTEMAILFAILED','Listu nie udało się wysłać. Spróbuj ponownie.');
@@ -397,15 +397,15 @@ DEFINE('_UE_USER','Użytkownik');
 DEFINE('_UE_USERAPPROVAL_MODERATE','Akceptacja/Odrzucenie użytkownika');
 DEFINE('_UE_USERPENDAPPRACTION',' Użytkownik(cy)');
 DEFINE('_UE_APPROVEUSER','Aprobata użytkownika(ów)');
-DEFINE('_UE_REG_REJECT_SUB','Twoja rejestracja została odrzucona!');
+DEFINE('_UE_REG_REJECT_SUB','Twoja rejestracja została odrzucona.');
 DEFINE('_UE_USERREJECT_MSG',"Twoja prośba o rejestrację w %s została odrzucona. Powód:\n%s");
 DEFINE('_UE_COMMENT','Komentarz do odrzucenia');
 DEFINE('_UE_APPROVE','Akceptuj');
 DEFINE('_UE_REJECT','Odrzuć');
-DEFINE('_UE_USERREJECT_SUCCESSFUL','Użytkownika skutecznie odrzucono!');
-DEFINE('_UE_USERAPPROVE_SUCCESSFUL','Użytkownika pomyślnie zaakceptowano!');
-DEFINE('_LOGIN_REJECTED','Twoja prośba o rejestrację została odrzucona!');
-DEFINE('_UE_EMAILFOOTER','Uwaga: Ta wiadomość została wygenerowana automatycznie przez %s (%s).');
+DEFINE('_UE_USERREJECT_SUCCESSFUL','Użytkownika odrzucono.');
+DEFINE('_UE_USERAPPROVE_SUCCESSFUL','Użytkownika zaakceptowano.');
+DEFINE('_LOGIN_REJECTED','Twoja prośba o rejestrację została odrzucona');
+DEFINE('_UE_EMAILFOOTER','-- \nUwaga: Ta wiadomość została wygenerowana automatycznie przez %s (%s).');
 DEFINE('_UE_MODERATORUSERAPPOVAL','Moderator aprobuje użytkowników');
 DEFINE('_UE_MODERATORUSERAPPOVAL_DESC','Taka konfiguracja pozwala moderatorom aprobować użytkowników oczekujących akceptacji przez stronę główną.');
 DEFINE('_UE_REG_COMPLETE_NOAPPR_CONF','<div class="componentheading">Rejestracja zakończona!</div>'
@@ -416,7 +416,7 @@ DEFINE('_UE_REG_COMPLETE_NOPASS_NOAPPR_CONF','<div class="componentheading">Reje
 .'<p>Kiedy otrzymasz powiadomienie o aprobacie i hasło, możesz zalogować się w naszej witrynie.</p>');
 DEFINE('_UE_NAME_STYLE','Styl nazwy użytkownika');
 DEFINE('_UE_NAME_STYLE_DESC','Rzeczywista nazwa użytkownika może być prezentowana w jednym z trzech sposobów: w jednym polu (imię), w dwóch polach - imię i nazwisko, w trzech polach - imię, drugie imię i nazwisko. Wybierz dowolny format.');
-DEFINE('_UE_USER_CONFIRMED_NEEDAPPR','Dziękujemy za potwierdzenie adresu email. Otwarcie Twojego konto wymaga akceptacji moderatora. Informację o wynikach otrzymasz pocztą elektroniczną.');
+DEFINE('_UE_USER_CONFIRMED_NEEDAPPR','Dziękujemy za potwierdzenie adresu email. Otwarcie Twojego konta wymaga akceptacji moderatora. Informację o wynikach otrzymasz pocztą elektroniczną.');
 DEFINE('_UE_YOUR_FNAME','Imię');   
 DEFINE('_UE_YOUR_MNAME','Drugie imię');
 DEFINE('_UE_YOUR_LNAME','Nazwisko');
@@ -645,7 +645,7 @@ DEFINE('_UE_MENU_PM_OPTIONS_DESC','Edytuj opcje Systemu prywatnych wiadomości')
 DEFINE('_UE_MENU', 'Menu');
 DEFINE('_UE_USER_STATUS', 'Status użytkownika');
 DEFINE('_UE_MENU_CB', 'Społeczność');
-DEFINE('_UE_MENU_ABOUT_CB', 'O Community Builder...');
+DEFINE('_UE_MENU_ABOUT_CB', 'O Community Builder...'); 
 DEFINE('_UE_SITE_POWEREDBY', 'Ten serwis korzysta z Joomla Community Builder');
 DEFINE('_UE_MENU_EDIT', 'Edycja');
 DEFINE('_UE_MENU_VIEW', 'Widok');
@@ -900,8 +900,8 @@ DEFINE('_UE_REG_USERNAMECHECKER_DESC','Pozwól na sprawdzenie podczas rejestracj
 // 1.1: frontend:
 DEFINE('_UE_BUTTON_LOGIN','Zaloguj');
 DEFINE('_UE_BUTTON_LOGOUT','Wyloguj');
-DEFINE('_UE_DO_LOGIN','Musisz się zalogować.');
-DEFINE('_UE_DO_LOGOUT','Musisz się wylogować.');
+DEFINE('_UE_DO_LOGIN','Musisz się zalogować');
+DEFINE('_UE_DO_LOGOUT','Musisz się wylogować');
 define('_UE_CHECK_USERNAME_AVAILABILITY','Sprawdź dostępność nazwy użytkownika');
 define('_UE_USERNAME_ALREADY_EXISTS',"Użytkownik '%s' jest już zarejestrowany: wybierz inną nazwę.");
 define('_UE_USERNAME_DOESNT_EXISTS',"Nazwa użytkownika '%s' jest dostępna do zarejestrowania: możesz kontynuować.");

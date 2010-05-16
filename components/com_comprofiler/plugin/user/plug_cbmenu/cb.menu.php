@@ -995,7 +995,7 @@ class getMenuTab  extends cbTabHandler {
 		$firstSubMenuHref	= $params->get('firstSubMenuHref', $ue_credits_url);
 		$secondSubMenuName	= $params->get('secondSubMenuName', '');
 		$secondSubMenuHref	= $params->get('secondSubMenuHref', '');
-		if ($firstMenuName != "") {
+		if (false) { // if ($firstMenuName != "")
 			$mi = array(); $mi[$firstMenuName]='';
 		//	$this->_addMenuItem( $mi,$firstMenuName,"javascript:void(0)" );		// Community
 			if ($firstSubMenuName != "") {
@@ -1066,6 +1066,7 @@ class getMenuTab  extends cbTabHandler {
 		}
 		// ----- MESSAGES MENU -----
 		// Send PMS
+		/*
 		if ( $_CB_framework->myId() != $user->id && $_CB_framework->myId() > 0 ) {
 			global $_CB_PMS;
 			$resultArray = $_CB_PMS->getPMSlinks($user->id, $_CB_framework->myId(), "", "", 1);
@@ -1079,8 +1080,10 @@ class getMenuTab  extends cbTabHandler {
 				}
 			}
 		}
+		*/
 
 		// Send Email
+		/*
 		$emailHtml=getFieldValue('primaryemailaddress',$user->email,$user);
 		if ($ueConfig['allow_email_display']!=4 && $_CB_framework->myId() != $user->id && $_CB_framework->myId() > 0) {
 			switch ($ueConfig['allow_email_display']) {
@@ -1103,6 +1106,7 @@ class getMenuTab  extends cbTabHandler {
 			$mi = array(); $mi["_UE_MENU_MESSAGES"]["_UE_MENU_SENDUSEREMAIL"]=null;
 			$this->_addMenuItem( $mi, $caption, $url, "", "", "", $desc, "" );
 		}
+		*/
 		// ----- CONNECTIONS MENU -----
 		IF ($ueConfig['allowConnections'] && $_CB_framework->myId() > 0) {
 			$ue_addConnection_url = $ue_base_url."&amp;act=connections&amp;task=addConnection&amp;connectionid=".$user->id;
