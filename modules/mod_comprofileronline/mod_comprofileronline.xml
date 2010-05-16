@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<install type="module" version="1.5" method="upgrade">
+	<name>CB Online</name> 
+	<creationDate>2010-03-04</creationDate>
+	<author>Beat and JoomlaJoe</author>
+	<copyright>(C) 2004-2010 joomlapolis.com. This module is released under the GNU/GPL v2 License</copyright> 
+	<authorEmail>beat@joomlapolis.com</authorEmail> 
+	<authorUrl>www.joomlapolis.com</authorUrl>
+	<version>1.2.2</version> 
+	<description>Displays a list of users logged in with a link to their profile.</description> 
+	<files>
+		<filename module="mod_comprofileronline">mod_comprofileronline.php</filename> 
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (login), this allows individual module styling" />
+		<param name="pretext" type="textarea" cols="20" rows="5" default="" label="Pre-text" description="This is the Text or HTML that is displayed above the list of users" />
+		<param name="posttext" type="textarea" cols="20" rows="5" label="Post-text" description="This is the Text or HTML that is displayed below the list of users" />
+	</params>
+</install>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cbinstall version="1.0" type="plugin" group="user">
+	<name>CB Fireboard/Joomlaboard/Simpleboard Tab</name>
+	<author>JoomlaJoe and Beat</author>
+	<creationDate>2009-01-26</creationDate>
+	<copyright>(C) 2005-2009 joomlapolis.com</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>beat@joomlapolis.com</authorEmail>
+	<authorUrl>www.joomlapolis.com</authorUrl>
+	<version>1.2</version>
+	<description>Provides a User Tab that shows top Fireboard/Joomlaboard/Simpleboard posts as well as forum statistics for the user.</description>
+	<files>
+		<filename plugin="cb.simpleboardtab">cb.simpleboardtab.php</filename>
+		<filename>cb.simpleboardtab.model.php</filename>
+		<filename>index.html</filename>
+		
+		<filename>view/cb.simpleboardtab.sidebar.php</filename>
+		<filename>view/cb.simpleboardtab.tab.php</filename>
+		<filename>view/index.html</filename>
+		
+		<filename>images/asc.gif</filename>
+		<filename>images/desc.gif</filename>
+		<filename>images/index.html</filename>
+	</files>
+    <params>
+    	<param name="forumType" type="list" default="0" label="Forum component" description="Choose the type of forum for integration. &lt;strong&gt;IMPORTANT: Fireboard/Joomlaboard/Simpleboard configuration integration with CB must be enabled and fields created from that same forum configuration integration tab.&lt;/strong&gt;">
+    		<option value="0">Auto-detect</option>
+    		<option value="4">Kunena from www.kunena.com</option>
+    		<option value="1">Fireboard from www.bestofjoomla.com</option>
+    		<option value="2">Joomlaboard from www.tsmf.net</option>
+    		<option value="3">Simpleboard</option>
+    	</param>
+    	<if name="forumType" type="showhide" operator="=" value="0" valuetype="const:int">
+			<param name="forumType_AutoDetect" type="custom" class="getForumTab" method="loadExistingForums" default="" label="Detected Forums" description="" />
+    	</if>
+    	<if name="forumType" type="showhide" operator="=" value="4" valuetype="const:int">
+    		<param name="@spacer" type="spacer" default="Display Settings" label="Sidebar:" description="" />
+	    	<param name="sidebarMode" type="list" default="0" label="Sidebar Mode" description="Kunena sidebar is displayed on the right of every post. This sidebar can be customized to display any information so desired using the various supported modes.">
+	    		<option value="0">Basic (default kunena)</option>
+	    		<option value="1">Beginner (field selection)</option>
+	    		<option value="2">Advanced (subsitution textarea)</option>
+	    		<option value="3">Expert (PHP file)</option>
+	    	</param>
+	    	<if name="sidebarMode" type="showhide" operator="=" value="1" valuetype="const:int">
+	    		<param name="sidebarBeginnerName" type="field" default="" label="Name Field" description="Field displayed in position of Username in sidebar." />
+	    		<param name="sidebarBeginnerAvatar" type="field" default="" label="Avatar Field" description="Field displayed in position of Avatar in sidebar." />
+	    		<param name="sidebarBeginner1" type="field" default="" label="Personal Text Field" description="Field displayed in position of Personal Text in sidebar." />
+	    		<param name="sidebarBeginner2" type="field" default="" label="Birthday Field" description="Field displayed in position of Birthday icon in sidebar." />
+	    		<param name="sidebarBeginner3" type="field" default="" label="Location Field" description="Field displayed in position of Location icon in sidebar." />
+	    		<param name="sidebarBeginner4" type="field" default="" label="Gender Field" description="Field displayed in position of Gender icon in sidebar." />
+	    		<param name="sidebarBeginner5" type="field" default="" label="ICQ Field" description="Field displayed in position of ICQ icon in sidebar." />
+	    		<param name="sidebarBeginner6" type="field" default="" label="AIM Field" description="Field displayed in position of AIM icon in sidebar." />
+	    		<param name="sidebarBeginner7" type="field" default="" label="YIM Field" description="Field displayed in position of YIM icon in sidebar." />
+	    		<param name="sidebarBeginner8" type="field" default="" label="MSN Field" description="Field displayed in position of MSN icon in sidebar." />
+	    		<param name="sidebarBeginner9" type="field" default="" label="SKYPE Field" description="Field displayed in position of SKYPE icon in sidebar." />
+	    		<param name="sidebarBeginner10" type="field" default="" label="GTALK Field" description="Field displayed in position of GTALK icon in sidebar." />
+	    		<param name="sidebarBeginner11" type="field" default="" label="Website Field" description="Field displayed in position of Website icon in sidebar." />
+	    	</if>
+	    	<if name="sidebarMode" type="showhide" operator="=" value="2" valuetype="const:int">
+	    		<param name="sidebar_advancedMode" type="spacer" default="&lt;div&gt;[cb:userfield field=&quot;formatname&quot;/]&lt;/div&gt;
+&lt;div&gt;[cb:userfield field=&quot;avatar&quot;/]&lt;/div&gt;
+&lt;div&gt;[cb:userfield field=&quot;forumrank&quot;/]&lt;/div&gt;" label="Example" description="" />
+	    		<param name="sidebarAdvancedExists" type="textarea" cols="30" rows="10" default="" label="Existing Users Sidebar" description="Advanced sidebar supports html and substitutions to fully design display of sidebar. Will display the sidebar of existing users." /> 
+	    		<param name="sidebarAdvancedDeleted" type="textarea" cols="30" rows="10" default="" label="Deleted Users Sidebar" description="Advanced sidebar supports html and substitutions to fully design display of sidebar. Will display the sidebar of deleted users." /> 
+	    		<param name="sidebarAdvancedPublic" type="textarea" cols="30" rows="10" default="" label="Public Users Sidebar" description="Advanced sidebar supports html and substitutions to fully design display of sidebar. Will display the sidebar of public users." /> 
+	    	</if>
+	    	<if name="sidebarMode" type="showhide" operator="=" value="3" valuetype="const:int">
+	    		<param name="sidebar_expertMode" type="spacer" default="Expert PHP file can be located at the following location: components/com_comprofiler/plugin/user/plug_cbsimpleboardtab/view/ within the file cb.simpleboardtab.sidebar.php as the function ShowExpert." label="Expert Sidebar" description="" />
+	    	</if>
+	    	<param name="sidebar_spacer" type="spacer" default="" label="" description="" />
+    	</if>
+    	<param name="@spacer" type="spacer" default="Display Settings" label="Forum Status:" description="" />
+    	<param name="statDisplay" type="list" default="1" label="Display forum statistics" description="Display the forum statistics. &lt;strong&gt;IMPORTANT: Kunena/Fireboard/Joomlaboard/Simpleboard configuration must also allow to show this!&lt;/strong&gt;">
+    		<option value="0">Hide</option>
+    		<option value="1">In User Profile Status</option>
+    		<option value="2">In Forum Tab</option>
+    	</param>
+    	<if name="statDisplay" type="showhide" operator="!=" value="0" valuetype="const:int">
+	    	<param name="TemplateRank" type="text" default="/template/default/images/english" label="Path Template rank" description="" />
+	    	<if name="statDisplay" type="showhide" operator="=" value="2" valuetype="const:int">
+		    	<param name="statRanking" type="list" default="1" label="Ranking" description="Display the forum ranking text. &lt;strong&gt;IMPORTANT: Kunena/Fireboard/Joomlaboard/Simpleboard configuration must also allow to show this!&lt;/strong&gt;">
+			        <option value="0">Hide</option>
+			        <option value="1">Show</option>
+			    </param>
+			    <param name="statRankingImg" type="list" default="1" label="Ranking Slider" description="Display the forum ranking graphic">
+			        <option value="0">Hide</option>
+			        <option value="1">Show Slider</option>
+			    </param>
+		    	<param name="statPosts" type="list" default="1" label="Total Posts" description="Display the forum total posts. &lt;strong&gt;IMPORTANT: Kunena/Fireboard/Joomlaboard/Simpleboard configuration must also allow to show this!&lt;/strong&gt;">
+			        <option value="0">Hide</option>
+			        <option value="1">Show if not 0</option>
+			        <option value="2">Show</option>
+			    </param>
+		    	<param name="statKarma" type="list" default="1" label="Karma" description="Display the forum karma. &lt;strong&gt;IMPORTANT: Kunena/Fireboard/Joomlaboard/Simpleboard configuration must also allow to show this!&lt;/strong&gt;">
+			        <option value="0">Hide</option>
+			        <option value="1">Show if not 0</option>
+			        <option value="2">Show</option>
+			    </param>
+			    <else action="set" name="statRanking" value="1" type="const:int" />
+			    <else action="set" name="statRankingImg" value="1" type="const:int" />
+			    <else action="set" name="statPosts" value="1" type="const:int" />
+			    <else action="set" name="statKarma" value="1" type="const:int" />
+		    </if>
+		</if>
+	    <param name="@spacer" type="spacer" default="" label="" description="" />
+	    <param name="@spacer" type="spacer" default="List Settings: see tab configuration: parameters" label="Forum Posts:" description="" />
+	</params>
+	<tabs>
+		<tab name="_UE_FORUMTAB" description="" class="getForumTab" fields="1" position="cb_main" displaytype="tab">
+			<params>
+				<param name="@spacer" type="spacer" default="List Settings" label="Forum Posts:" description="" />
+				<param name="postsNumber" type="text" size="10" default="10" label="Number of posts to display" description="If showing all posts, this is the number of posts per page. If showing only last ones, this is the number of posts to show. Default is 10" />
+	    		<param name="pagingEnabled" type="radio" default="0" label="Show all forum posts with paging" description="If set to -show all- all forum posts will become visible in the user profile. Otherwise, only the last posts will be visible.">
+	     			<option value="0">Only last ones</option>
+	     			<option value="1">Show all</option>
+	   			</param>
+	    		<param name="searchEnabled" type="radio" default="0" label="Allow search function" description="IMPORTANT: Show all posts must also be set. Allows a search on posts from the user.">
+	     			<option value="0">Disabled</option>
+	     			<option value="1">Enabled</option>
+	   			</param>
+				<param name="@spacer" type="spacer" default="" label="" description="" />
+				<param name="@spacer" type="spacer" default="see plugin configuration: Forum: parameters" label="More settings:" description="" />
+			</params>
+			<fields>
+				<field type="forumsettings" title="_UE_FB_SIGNATURE" name="forumsignature" description="" registration="0" readonly="0" profile="0" />
+				<field type="forumsettings" title="_UE_FB_ORDERING_TITLE" name="forumorder" description="" registration="0" readonly="0" profile="0" />
+				<field type="forumsettings" title="_UE_FB_VIEWTYPE_TITLE" name="forumview" description="" registration="0" readonly="0" profile="0" />
+			</fields>
+		</tab>
+	</tabs>
+	<fieldtypes>
+		<field type="forumstats" label="Forum Status" unique="true">
+			<database version="1">
+				<table name="#__comprofiler" class="moscomprofiler" strict="false" drop="never" shared="true">
+					<columns>
+					</columns>
+				</table>
+			</database>
+			<params>
+			</params>
+		</field>
+		<field type="forumsettings" label="Forum Settings" unique="true">
+			<database version="1">
+				<table name="#__comprofiler" class="moscomprofiler" strict="false" drop="never" shared="true">
+					<columns>
+					</columns>
+				</table>
+			</database>
+			<params>
+				<fieldset name="fs_signature" label="Signature" description="Field settings for signature.">
+					<param name="fs_signature_cols" type="text" size="10" default="0" label="Cols" description="Textarea column span." />
+					<param name="fs_signature_rows" type="text" size="10" default="0" label="Rows" description="Textarea row span." />
+				</fieldset>
+			</params>
+		</field>
+	</fieldtypes>
+	<database>
+	</database>
+</cbinstall>
