@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+<!-- Joomla! 1.5 Installer XML File -->
+    <name>JoomlaStats</name>
+    <author>JoomlaStats Team</author>
+    <creationDate>2010-02-21</creationDate>
+    <copyright>Copyright (C) 2004-2010 JoomlaStats Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@JoomlaStats.org</authorEmail>
+    <authorUrl>www.JoomlaStats.org</authorUrl>
+    <version>3.0.3</version>
+    <description></description><!-- description should be EMPTY !  In j1.5.9 it is used only during installation process. In j1.5.6 it is not used in any tips, infos etc. Reason: We generate Own after installation page. Any info here broke that page! -->
+
+	<!-- JS have own scripts to handle with DB installation
+    <install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+    </install>
+    <uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+    </uninstall>
+	-->
+
+    <installfile>install.com_joomlastats.php</installfile>
+    <uninstallfile>uninstall.com_joomlastats.php</uninstallfile>
+
+    <administration>
+        <languages folder="admin">
+            <language tag="de-DE">language/de-DE.com_joomlastats.ini</language>
+            <language tag="en-GB">language/en-GB.com_joomlastats.ini</language>
+            <language tag="es-ES">language/es-ES.com_joomlastats.ini</language>
+            <language tag="fr-FR">language/fr-FR.com_joomlastats.ini</language>
+            <language tag="nb-NO">language/nb-NO.com_joomlastats.ini</language>
+            <language tag="pl-PL">language/pl-PL.com_joomlastats.ini</language>
+            <language tag="pt-BR">language/pt-BR.com_joomlastats.ini</language>
+            <language tag="pt-PT">language/pt-PT.com_joomlastats.ini</language>
+            <language tag="ru-RU">language/ru-RU.com_joomlastats.ini</language>
+            <language tag="sv-SE">language/sv-SE.com_joomlastats.ini</language>
+        </languages>
+
+        <!--  menu is updated during installation process because of icons and being multilangual -->
+        <menu task="js_view_statistics_default"     img="../administrator/components/com_joomlastats/images/icon-16-js_js-logo.png">JoomlaStats</menu>
+        <!-- mic: we do not use submenus anymore - reply - at: yes we use, we wait for joomla fix to make it works, below lines should be uncomented and tested
+        <submenu>
+            <menu task="js_view_statistics_default" img="../administrator/components/com_joomlastats/images/icon-16-js_statistics.png">Statistics</menu>
+            <menu task="js_view_exclude"            img="../administrator/components/com_joomlastats/images/icon-16-js_exclude.png">Exclude Manager</menu>
+            <menu task="js_view_configuration"      img="../administrator/components/com_joomlastats/images/icon-16-js_configuration.png">Configuration</menu>
+            <menu task="js_view_tools"              img="../administrator/components/com_joomlastats/images/icon-16-js_maintenance.png">Maintenance</menu>
+            <menu task="js_view_status"             img="../administrator/components/com_joomlastats/images/icon-16-js_status.png">Status</menu>
+        </submenu>
+        -->
+
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>admin.joomlastats.php</filename>
+            <filename>admin.joomlastats.html.php</filename>
+            <filename>api.base.php</filename>
+            <filename>backup.php</filename>
+            <filename>backup.html.php</filename>
+            <filename>base.classes.php</filename>
+            <filename>configuration.php</filename>
+            <filename>configuration.html.php</filename>
+            <filename>count.classes.php</filename>
+            <filename>exclude.php</filename>
+            <filename>exclude.html.php</filename>
+            <filename>export.php</filename>
+            <filename>export.html.php</filename>
+            <filename>filters.php</filename>
+            <filename>install.com_joomlastats.php</filename>
+            <filename>install.com_joomlastats.html.php</filename>
+            <filename>maintenance.php</filename>
+            <filename>maintenance.html.php</filename>
+            <filename>resources.php</filename>
+            <filename>res.jlprogressbar.php</filename>
+            <filename>res.jlprogressbar.html.php</filename>
+            <filename>res.jlprogressbardual.html.php</filename>
+            <filename>statistics.php</filename>
+            <filename>statistics.html.php</filename>
+            <filename>statistics.common.php</filename>
+            <filename>statistics.common.html.php</filename>
+            <filename>status.php</filename>
+            <filename>status.html.php</filename>
+            <filename>template.html.php</filename>
+            <filename>tld.php</filename>
+            <filename>tld.html.php</filename>
+            <filename>toolbar.joomlastats.php</filename>
+            <filename>toolbar.joomlastats.html.php</filename>
+            <filename>tools.php</filename>
+            <filename>tools.html.php</filename>
+            <filename>uninstall.com_joomlastats.php</filename>
+            <filename>util.classes.php</filename>
+
+            <filename>api/index.html</filename>
+            <filename>api/api.include.php</filename>
+            <filename>api/general.php</filename>
+            <filename>api/module.php</filename>
+            <filename>api/simple.php</filename>
+            
+            <filename>assets/index.html</filename>
+            <filename>assets/icon.css</filename>
+
+            <filename>database/index.html</filename>
+            <filename>database/access.php</filename>
+            <filename>database/db.constants.php</filename>
+            <filename>database/select.many.rows.php</filename>
+            <filename>database/select.one.row.php</filename>
+            <filename>database/select.one.value.php</filename>
+            <filename>database/stand.alone.configuration.php</filename>
+            <filename>database/res_joomla/index.html</filename>
+            <filename>database/res_joomla/database.php</filename>
+            <filename>database/res_joomla/object.php</filename>
+            <filename>database/res_joomla/database/index.html</filename>
+            <filename>database/res_joomla/database/mysql.php</filename>
+            <filename>database/res_joomla/database/mysqli.php</filename>
+            
+            <!-- this will copy whole directory with all images -->
+            <folder>images</folder>
+
+            <filename>install/index.html</filename>
+            <filename>install/all.data.joomlastats.inc.php</filename>
+            <filename>install/all.tables.joomlastats.inc.php</filename>
+            <filename>install/update.db.joomlastats.inc.php</filename>
+
+
+            <filename>tools/index.html</filename>
+            <filename>tools/whois.class.php</filename>
+            <filename>tools/whois.popup.php</filename>
+
+
+            <filename>tools/flashchart/index.html</filename>
+            <filename>tools/flashchart/ampie/index.html</filename>
+            <filename>tools/flashchart/ampie/ampie.swf</filename>
+            <filename>tools/flashchart/ampie/export.php</filename>
+            <filename>tools/flashchart/ampie/license.txt</filename>
+            <filename>tools/flashchart/ampie/swfobject.js</filename>
+
+            <filename>tools/flashchart/charts/index.html</filename>
+            <filename>tools/flashchart/charts/ampie1/index.html</filename>
+            <filename>tools/flashchart/charts/ampie1/ampie_data.txt</filename>
+            <filename>tools/flashchart/charts/ampie1/ampie_settings.xml</filename>
+
+            <filename>tools/flashchart/charts/chart2/index.html</filename>
+            <filename>tools/flashchart/charts/chart2/ampie_data.txt</filename>
+            <filename>tools/flashchart/charts/chart2/ampie_settings.xml</filename>
+
+            <filename>tools/flashchart/charts/default/index.html</filename>
+            <filename>tools/flashchart/charts/default/ampie_data.txt</filename>
+            <filename>tools/flashchart/charts/default/ampie_data.xml</filename>
+            <filename>tools/flashchart/charts/default/ampie_settings.xml</filename>
+        </files>
+    </administration>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>joomlastats.html.php</filename>
+        <filename>joomlastats.php</filename>
+        <filename>joomlastats.inc.php</filename>
+        <filename>stand.alone.joomlastats.inc.php</filename>
+
+        <filename>images/index.html</filename>
+        <filename>images/readme.txt</filename>
+
+        <!-- coping all images with directories -->
+        <folder>images/browser-png-14x14-1</folder>
+        
+        <folder>images/os-png-14x14-1</folder>
+                
+        <folder>images/tld-png-16x11-1</folder>
+    </files>
+</install>

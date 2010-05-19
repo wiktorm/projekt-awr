@@ -1,0 +1,4 @@
+Ja;100;;;;Description 1
+WTF?!!1elf;1000;true;;;Description 4
+Nein;300;;;;Description 2
+Vielleicht;200;;;;Description 3

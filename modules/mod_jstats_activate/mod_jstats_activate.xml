@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+    <name>JoomlaStats Activation</name>
+    <author>JoomlaStats Team</author>
+    <creationDate>2009-07-15</creationDate>
+    <copyright>Copyright (C) 2004-2009 JoomlaStats Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@JoomlaStats.org</authorEmail>
+    <authorUrl>www.JoomlaStats.org</authorUrl>
+    <version>3.0.0</version>
+    <description>
+        <![CDATA[
+            JoomlaStats Activation Module - Activates the JoomlaStats Statistics (Component/Engine).<br />
+            <br />
+            Activation Module is extension to JoomlaStats component/engine (com_joomlastats).<br />
+            <br />
+            <br />
+            <b>REMEMBER TO PUBLISH/ENABLE THIS MODULE!</b><br />
+            <br />
+            <br />
+            Project JoomlaStats homepage <a href="http://www.joomlastats.org" target="_blank">http://www.joomlastats.org</a>.<br />
+            This Module (mod_jstats_activate) <a href="http://www.joomlastats.org/index.php?option=com_content&amp;task=view&amp;id=70&amp;Itemid=38" target="_blank"><b>homepage</b></a>.
+        ]]>
+    </description>
+
+    <files>
+        <filename module="mod_jstats_activate">mod_jstats_activate.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <params>
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+</install>
