@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="xmap_ext" version="1.5.0">
+        <name>Phoca Gallery</name>
+        <author>Aleksandar Bogdanovic</author>
+        <creationDate>April 2009</creationDate>
+        <copyright>GNU GPL v2.0</copyright>
+        <license>GPL v2.0</license>
+        <authorEmail>albog@banitech.com</authorEmail>
+        <authorUrl>http://www.banitech.com</authorUrl>
+        <version>1.0.0</version>
+        <description>XMAP plugin for Phoca Gallery Componet!</description>
+        <files>
+                <filename xmap_ext="com_phocagallery">com_phocagallery.php</filename>
+        </files>
+        <params>
+ 		<param name="expand_categories" type="list" default="1" label="Expand Categories" description="Expand Content Categories">
+                        <option value="0">Never</option>
+                        <option value="1">Always</option>
+                        <option value="2">In XML Sitemap Only</option>
+                        <option value="3">In Site Sitemap Only</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="XML Sitemap" description="Options for the XML sitemap only" />
+                <param name="cat_priority" type="list" default="-1" label="Category Priority" description="Set the priority for the categories">
+                        <option value="-1">Use Parent Menu Settings</option>
+                        <option value="0.0">0.0</option>
+                        <option value="0.1">0.1</option>
+                        <option value="0.2">0.2</option>
+                        <option value="0.3">0.3</option>
+                        <option value="0.4">0.4</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.6">0.6</option>
+                        <option value="0.7">0.7</option>
+                        <option value="0.8">0.8</option>
+                        <option value="0.9">0.9</option>
+                        <option value="1">1</option>
+                </param>
+                <param name="cat_changefreq" type="list" default="-1" label="Category Change frequency" description="Set the chage frequency for the categories">
+                        <option value="-1">Use Parent Menu Settings</option>
+                        <option value="always">Always</option>
+                        <option value="hourly">Hourly</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                        <option value="never">Never</option>
+                </param>
+                <param name="file_priority" type="list" default="-1" label="File Priority" description="Set the priority for the files">
+                        <option value="-1">Use Parent Menu Settings</option>
+                        <option value="0.0">0.0</option>
+                        <option value="0.1">0.1</option>
+                        <option value="0.2">0.2</option>
+                        <option value="0.3">0.3</option>
+                        <option value="0.4">0.4</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.6">0.6</option>
+                        <option value="0.7">0.7</option>
+                        <option value="0.8">0.8</option>
+                        <option value="0.9">0.9</option>
+                        <option value="1">1</option>
+                </param>
+                <param name="file_changefreq" type="list" default="-1" label="File Change frequency" description="Set the chage frequency for the files">
+                        <option value="-1">Use Parent Menu Settings</option>
+                        <option value="always">Always</option>
+                        <option value="hourly">Hourly</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                        <option value="never">Never</option>
+                </param>
+        </params>
+</install>
