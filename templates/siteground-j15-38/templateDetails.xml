@@ -11,11 +11,13 @@
 	<description>TEMPLATE_DESCRIPTION</description>
 	<files>
 		<filename>index.php</filename>
+		<filename>component.php</filename>
 		<filename>templateDetails.xml</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>params.ini</filename>
-		<filename>templates.php</filename>
-		
+		<filename>html/index.html</filename>
+		<filename>html/modules.php</filename>
+		<filename>html/pagination.php</filename>
 		<filename>images/banner_01.jpg</filename>
 		<filename>images/banner_02.jpg</filename>
 		<filename>images/bodybg.jpg</filename>
@@ -36,7 +38,6 @@
 		<filename>images/spacer.png</filename>
 		<filename>images/submenu_row.gif</filename>
 		<filename>images/top.jpg</filename>
-		
 		<filename>css/index.html</filename>
 		<filename>css/template.css</filename>
 		<filename>css/editor.css</filename>
@@ -44,16 +45,20 @@
 	</files>
 	<languages>
 		<language tag="en-GB">en-GB.tpl_siteground-j15-38.ini</language>
+		<language tag="pl-PL">pl-PL.tpl_siteground-j15-38.ini</language>
 	</languages>
 	<administration>
 	    <languages folder="admin">
-			<language tag="en-GB">en-GB.tpl_siteground-j15-38.ini</language>
+	    	<language tag="en-GB">en-GB.tpl_siteground-j15-38.ini</language>
+			<language tag="pl-PL">pl-PL.tpl_siteground-j15-38.ini</language>
 		</languages>
     </administration>
 	
 	<positions>
 		<position>user3</position>
 		<position>left</position>
+		<position>syndicate</position>
+		<position>footer</position>
 		<position>debug</position>
 	</positions>
 	

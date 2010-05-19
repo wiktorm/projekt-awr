@@ -8,6 +8,7 @@ JPlugin::loadLanguage( 'tpl_SG1' );
 <jdoc:include type="head" />
 
 <link rel="stylesheet" href="templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
 
 </head>
@@ -31,9 +32,7 @@ JPlugin::loadLanguage( 'tpl_SG1' );
 			<div id="inner_shadows">	
 				<div id="content">
 					<div id="leftcolumn">	
-						<jdoc:include type="modules" name="left" style="rounded" />
-<br /><?php $sg = "banner"; include "templates.php"; ?><br />
-						
+						<jdoc:include type="modules" name="left" style="rounded" />					
 					</div>
 					
 					<div id="maincolumn">	
@@ -44,21 +43,21 @@ JPlugin::loadLanguage( 'tpl_SG1' );
 							<?php endif; ?>
 						</div>
 					<div class="clr"></div>
+					</div>
 				</div>
 			</div>
+			<div id="content_bottom"></div>			
 		</div>
-		<div id="content_bottom"></div>			
-	</div>	
-	<jdoc:include type="modules" name="debug" />
 	</div>
 	
 	<div id="footer">
+		<jdoc:include type="modules" name="footer" />
 		<p>
-			Valid <a href="http://validator.w3.org/check/referer">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+			<?php echo JText::_("Valid");?> <a href="http://validator.w3.org/check/referer">XHTML</a> <?php echo JText::_("and");?> <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+			<jdoc:include type="modules" name="syndicate" />
 		</p>
-		<div id="sgf">
-			<?php $sg = ''; include "templates.php"; ?>
-		</div>
 	</div>	
+	
+	<jdoc:include type="modules" name="debug" />
 </body>
 </html>

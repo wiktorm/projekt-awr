@@ -67,7 +67,7 @@ p {
 	border: 1px solid #000000;
 	color: #333;
 	padding: 2px;
-        background-color: #82d6fd;
+    background-color: #82d6fd;
 }
 .inputbox:hover {
 
@@ -245,8 +245,12 @@ td.middle_pad {
 #footer p {
 	height: 20px;
 	text-align: right;
-	padding: 10px 30px 0 0;
+	padding: 10px 10px 0 0;
 	color: #666;
+}
+
+#footer a span { 
+	display: none;
 }
 
 /*****************************************/
