@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>siteground-j15-38</name>
+	<version>1.0.0</version>
+	<creationDate>04/2008</creationDate>
+	<author>SiteGround</author>
+	<authorEmail>templates@siteground.com</authorEmail>
+	<authorUrl>http://www.siteground.com</authorUrl>
+	<copyright>SiteGround</copyright>
+	<license>SG TOS</license>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>templates.php</filename>
+		
+		<filename>images/banner_01.jpg</filename>
+		<filename>images/banner_02.jpg</filename>
+		<filename>images/bodybg.jpg</filename>
+		<filename>images/content.jpg</filename>
+		<filename>images/content_bottom.jpg</filename>
+		<filename>images/h3.jpg</filename>
+		<filename>images/header.jpg</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/index.html</filename>	
+		<filename>images/left_body.gif</filename>
+		<filename>images/left_top.gif</filename>
+		<filename>images/menu_li.jpg</filename>
+		<filename>images/menu_li_a.jpg</filename>
+		<filename>images/menu_row.gif</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/submenu_row.gif</filename>
+		<filename>images/top.jpg</filename>
+		
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/editor.css</filename>
+<filename>images/sg_background.gif</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_siteground-j15-38.ini</language>
+	</languages>
+	<administration>
+	    <languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_siteground-j15-38.ini</language>
+		</languages>
+    </administration>
+	
+	<positions>
+		<position>user3</position>
+		<position>left</position>
+		<position>debug</position>
+	</positions>
+	
+</install>
