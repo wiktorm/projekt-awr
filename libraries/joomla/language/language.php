@@ -222,6 +222,10 @@ class JLanguage extends JObject
 	 */
 	function transliterate($string)
 	{
+		$string = preg_replace(
+			array('/ą/','/Ą/','/ę/','/Ę/','/ć/','/Ć/','/ń/','/Ń/','/ś/','/Ś/','/ź|ż/','/Ź|Ż/','/ł/','/Ł/','/ó/','/Ó/'),
+			array("a","A","e","E","c","C","n","N","s","S","z","Z","l","L","o","O"),
+			$string);
 		$string = htmlentities(utf8_decode($string));
 		$string = preg_replace(
 			array('/&szlig;/','/&(..)lig;/', '/&([aouAOU])uml;/','/&(.)[^;]*;/'),
