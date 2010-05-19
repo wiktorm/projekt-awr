@@ -635,7 +635,7 @@ div.module_menu ul li a:link, div.module_menu ul li a:visited {
 
 #leftcolumn ul.menu, #rightcolumn ul.menu {
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 0 4px 0;
 	list-style: none;
 	width: 164px;
 }
@@ -646,6 +646,22 @@ div.module_menu ul li a:link, div.module_menu ul li a:visited {
 }
 
 #leftcolumn ul.menu li:hover, #rightcolumn ul.menu li:hover {
+
+}
+
+#leftcolumn ul.sections, #rightcolumn ul.sections {
+	margin: 0 auto;
+	padding: 0 0 4px 0;
+	list-style: none;
+	width: 164px;
+}
+
+#leftcolumn ul.sections li, #rightcolumn ul.sections li {
+	margin: 0;
+	padding: 0;
+}
+
+#leftcolumn ul.sections li:hover, #rightcolumn ul.sections li:hover {
 
 }
 
@@ -667,6 +683,23 @@ div.module_menu ul li a:link, div.module_menu ul li a:visited {
 	color: #333;
 }
 
+#leftcolumn ul.sections li a, #leftcolumn ul.sections li a:link,
+#rightcolumn ul.sections li a, #rightcolumn ul.sections li a:link {
+	line-height: 18px;
+	padding: 0 0 0 8px;
+	text-decoration: none;
+	color: #666;
+	font-weight: normal;
+	font-size: 11px;
+	background: url(../images/menu_row.gif) center left no-repeat;
+	margin: 0;
+	height: 18px;
+}
+
+#leftcolumn ul.sections li a:hover, #rightcolumn ul.sections li a:hover {
+	color: #333;
+}
+
 /*LEFT COL CURRENT LINK*/
 #leftcolumn ul.menu li#current a, #leftcolumn ul.menu li#current a:link, 
 #rightcolumn ul.menu li#current a, #rightcolumn ul.menu li#current a:link {
@@ -682,6 +715,24 @@ div.module_menu ul li a:link, div.module_menu ul li a:visited {
 }
 
 #leftcolumn ul.menu li#current a:hover, #rightcolumn ul.menu li#current a:hover {
+	
+}
+
+/*LEFT COL CURRENT LINK*/
+#leftcolumn ul.sections li#current a, #leftcolumn ul.sections li#current a:link, 
+#rightcolumn ul.sections li#current a, #rightcolumn ul.sections li#current a:link {
+	line-height: 18px;
+	padding: 0 0 0 8px;
+	text-decoration: none;
+	color: #333;
+	font-weight: normal;
+	font-size: 11px;
+	background: url(../images/menu_row.gif) center left no-repeat;
+	margin: 0;
+	height: 18px;
+}
+
+#leftcolumn ul.sections li#current a:hover, #rightcolumn ul.sections li#current a:hover {
 	
 }
 
@@ -978,4 +1029,8 @@ a.sglink:hover {
 	color: #555;
 	font-family: Tahoma, Arial, sans-serif;
 	text-decoration: none;
-	}
+}
+
+#leftcolumn #mod_loginform, #rightcolumn #mod_loginform {
+	padding: 0 0 4px 4px;
+}
