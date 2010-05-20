@@ -1164,7 +1164,7 @@ DEFINE ('_UE_EMPTYFIELDSTEXT_DESC','Tekst, który jest wyświetlany w pustych po
 
 
 // 1.2 CB RC 2 beta 2:
-DEFINE('_UE_USERNAME_OR_EMAIL','Nazwa użytkownika lub e-mail');
+DEFINE('_UE_USERNAME_OR_EMAIL','Użytkownik lub e-mail'); // 'Nazwa użytkownika lub e-mail'
 // 1.2 CB RC 2 beta 2 backend:
 DEFINE('_UE_SAVE','Zapisz');
 DEFINE('_UE_LOGIN_TYPE','Typ pola logowania');
