@@ -175,24 +175,7 @@ if ( $_CB_framework->myId() ) {
 
 
 	$avatarDisplayed = false;
-	if ($show_avatar == 0) {
-		if ($greeting) echo '<span id="mod_login_greeting'.$class_sfx.'">'.sprintf( _UE_HI_NAME, $name ).'</span>'.($horizontal ? "&nbsp;" : "");
-	} else {
-		
-		if (($avatar_position=="default") and ($greeting)) echo '<span id="mod_login_greeting'.$class_sfx.'">'.sprintf( _UE_HI_NAME, $name ).'</span>';
 
-		$cbUser		=&	CBuser::getInstance( $_CB_framework->myId() );
-		$oValue		=	$cbUser->avatarFilePath( $show_avatar );
-		if ($oValue) {
-			if ($avatar_position=="default") echo '<div style="text-align:center; margin-left:auto; margin-right:auto;">';
-			else echo '<div style="float:'.$avatar_position.'; margin: 3px 0px 4px 0px; ">';
-			echo '<a href="'.cbSef("index.php?option=com_comprofiler&amp;task=userProfile".$andItemid).'" class="mod_login'.$class_sfx.'">';		
-			echo '<img src="' . htmlspecialchars( $oValue ) . '" style="margin: 0px 1px 3px 1px; border-width:0px;" alt="'.$name
-				 . '" title="'. _UE_MENU_VIEWMYPROFILE_DESC . '" class="mod_login'.$class_sfx.'" id="mod_login_avatar'.$class_sfx.'" />';
-			echo "</a></div>\n";
-			$avatarDisplayed = true;
-		}
-	}
 	
 	if ( trim( $text_show_profile ) ) {
 		if ( ! ( ( $compact && ( $show_remind_register_icons == 2 ) ) || $horizontal ) ) {
@@ -449,7 +432,6 @@ if ( $_CB_framework->myId() ) {
 	if (!$horizontal) {
 		if ((!$avatarDisplayed) or ($avatar_position!="default") or ($pms)) $topMargin = "1.4em";
 		else $topMargin = "2px";
-		echo '<div style="text-align:center; margin:auto; margin: '.$topMargin.' 0px 2px 0px;">';
 	}
 
 	if ( $cb_plugins ) {
@@ -481,7 +463,7 @@ if ( $_CB_framework->myId() ) {
 			$buttonValue	=	_UE_BUTTON_LOGOUT;
 			break;
 	}
-	echo '<input type="submit" name="Submit" class="button'.$class_sfx.'" value="' . $buttonValue . '"' . $buttonStyle . ' />';
+	echo '<div class="readon"><input type="submit" name="Submit" class="button'.$class_sfx.'" value="' . $buttonValue . '"' . $buttonStyle . ' /></div>';
 
 	echo "\n".'<input type="hidden" name="op2" value="logout" />'."\n";
 	echo '<input type="hidden" name="lang" value="' . $_CB_framework->getCfg( 'lang' ) . '" />'."\n";
@@ -493,7 +475,7 @@ if ( $_CB_framework->myId() ) {
 		$validate = josSpoofValue( 1 );
 		echo "<input type=\"hidden\" name=\"" .  $validate . "\" value=\"1\" />\n";
 	}
-	if ( !$horizontal ) echo "</div>";
+	if ( $horizontal ) 
 	echo "</form>";		// wondering if this was even neeeded: </div>";
 
 	// Add Authenticated Post text

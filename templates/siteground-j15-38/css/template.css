@@ -147,13 +147,11 @@ div#wrapper {
 
 .pill_m {
 	padding: 0;
-	width: 700px;
+	width: 920px;
 	height: 22px;
-	float: right;
 }
 
 #pillmenu {
-	float: right;
 	margin: 0;
 	padding: 2px 0 0 0;
 }
@@ -524,18 +522,42 @@ table.user1user2 div.moduletable {
 	margin-bottom: 0px;
 }
 
-div.moduletable, div.module, div.modulebannerpogodowy {
+div.moduletable, div.module, div.modulebannerpogodowy, div.odwiedzili, div.modulelosowe  {
   margin-bottom: 25px;
 }
 
-div.module_menu, div.module, div.modulebannerpogodowy {
+div.module_menu, div.module, div.modulebannerpogodowy, div.moduleodwiedzili, div.modulelosowe {
 	margin: 0;
 	padding: 0;
 }
-div.modulebannerpogodowy {
+div.modulebannerpogodowy, div.moduleodwiedzili, div.modulelosowe {
 
 text-align:center;
 
+}
+div.modulelosowe div div {
+text-align:center;
+margin-bottom: 14px;
+	padding: 0;
+	background: url(../images/left_body.gif) bottom center no-repeat;
+}
+div.modulelosowe div div div{
+	padding: 0;
+	width: auto;
+	margin: 0;
+	background: url(../images/left_top.gif) top center no-repeat;
+}
+div.moduleodwiedzili div div {
+text-align:center;
+margin-bottom: 14px;
+	padding: 0;
+	background: url(../images/left_body.gif) bottom center no-repeat;
+}
+div.moduleodwiedzili div div div{
+	padding: 0;
+	width: auto;
+	margin: 0;
+	background: url(../images/left_top.gif) top center no-repeat;
 }
 div.modulebannerpogodowy div div {
 text-align:center;
