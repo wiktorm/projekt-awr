@@ -1,15 +1,15 @@
 <?php
 /**
-* Joomla Community Builder
-* @version $Id: germani.php 2008-05-31 00:00:00Z slabbi $
-* @package Community Builder
-* @subpackage Language file (Germani)
-* @author Bernhard Zechmann, Stephan Slabihoud
-* @copyright (C) Bernhard Zechmann, Stephan Slabihoud
-* @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
-* @translation: Stefan Wajda (zwiastun); piglet, Iceman
-* poprawki tłumaczenia: Jakub Róg
-*/
+ * Joomla Community Builder
+ * @version $Id: germani.php 2008-05-31 00:00:00Z slabbi $
+ * @package Community Builder
+ * @subpackage Language file (Germani)
+ * @author Bernhard Zechmann, Stephan Slabihoud
+ * @copyright (C) Bernhard Zechmann, Stephan Slabihoud
+ * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
+ * @translation: Stefan Wajda (zwiastun); piglet, Iceman
+ * poprawki tłumaczenia: Jakub Róg
+ */
 // ensure this file is being included by a parent file:
 if ( ! ( defined( '_VALID_CB' ) || defined( '_JEXEC' ) || defined( '_VALID_MOS' ) ) ) { die( 'Direct Access to this location is not allowed.' ); }
 
@@ -50,7 +50,7 @@ DEFINE('_UE_USERNAME_DESC','&quot;Tak&quot;, aby zezwolić na zmianę nazwy uży
 DEFINE('_UE_ALLOW_EMAIL_USERCONTR','Ukryj email użytkownika');
 DEFINE('_UE_ALLOW_EMAIL_USERCONTR_DESC','&quot;Tak&quot; pozwoli użytkownikowi ukryć jego adres email. &quot;Uwaga&quot;: To ustawienie dotyczy wyłącznie wyświetlania adresu w tym komponencie!');
 DEFINE('_UE_USERAPPROVAL_SUCCESSFUL','Użytkownika zaakceptowano pomyślnie!');
- 
+
 //Front End Profile Lables
 DEFINE('_UE_MEMBERSINCE','Wśród nas od');
 DEFINE('_UE_LASTONLINE','Poprzednia wizyta');
@@ -65,7 +65,7 @@ DEFINE('_UE_ADDITIONAL_INFO_HEADER','Dodatkowe informacje');
 DEFINE('_UE_REQUIRED_ERROR','To pole jest wymagane!');
 DEFINE('_UE_FIELD_REQUIRED',' Wymagane!');
 DEFINE('_UE_DELETE_AVATAR','Usuń awatara');
- 
+
 //Administrator Tab Names
 DEFINE('_UE_USERPROFILE','Profil użytk.');
 DEFINE('_UE_USERLIST','Lista użytk.');
@@ -122,8 +122,8 @@ DEFINE('_UE_ALLOW_ONLINESTATUS_DESC','&quot;Tak&quot;, aby wyświetlać informac
 DEFINE('_UE_ALLOW_EMAIL_DISPLAY_DESC','Uwaga: Dotyczy tylko głównego adresu email użytkownika.');
 DEFINE('_UE_ALLOW_EMAIL_REPLYTO','Listy wysłane "Od:"');
 DEFINE('_UE_ALLOW_EMAIL_REPLYTO_DESC','Ustawienie dla formularzy "Wyślij-do-użytkownika" : Wybierz pomiędzy:<ol>'
-		.'<li>"Od:" Adres użytkownika (bez pola "Odpowiedz do:)" :<br/>Użytkownik otrzymuje wszystkie odpowiedzi i raporty błędów., dla lepszej prywatności)</li>'
-		.'<li>"Od:" Adres administratora, z polem "Odpowiedz do": Adres użytkownika:<br/>Zapewnia zgodność z protokołem antyspamowym SPF (Sender Policy Framework), ale administrator może otrzymywać błędy lub błędne odpowiedzi</li></ol>');
+.'<li>"Od:" Adres użytkownika (bez pola "Odpowiedz do:)" :<br/>Użytkownik otrzymuje wszystkie odpowiedzi i raporty błędów., dla lepszej prywatności)</li>'
+.'<li>"Od:" Adres administratora, z polem "Odpowiedz do": Adres użytkownika:<br/>Zapewnia zgodność z protokołem antyspamowym SPF (Sender Policy Framework), ale administrator może otrzymywać błędy lub błędne odpowiedzi</li></ol>');
 DEFINE('_UE_A_FROM_USER', 'Adres użytkownika');
 DEFINE('_UE_A_FROM_ADMIN', 'Adres administratora, z polem "Odpowiedz do: Użytkownika');
 
@@ -137,7 +137,7 @@ DEFINE ('_UE_AVATARUPLOADAPPROVAL','Dodane awatary wymagają akceptacji');
 DEFINE ('_UE_AVATARUPLOADAPPROVAL_DESC','Wszystkie dodane awatary przed publikacją wymagają akceptacji administratora.');
 DEFINE ('_UE_ALLOWUSERPROFILEBANNING_DESC','Umożliwia moderatorom blokowanie wyświetlania profili użytkowników na stronie głównej.');
 DEFINE ('_UE_ALLOWUSERPROFILEBANNING','Zezwól na blokowanie profilów');
- 
+
 //Admin Registration tab labels
 DEFINE('_UE_NAME_FORMAT','Format nazwy');
 DEFINE('_UE_DATE_FORMAT','Format daty');
@@ -182,7 +182,7 @@ DEFINE('_UE_REG_EMAIL_TAGS','[NAME] - imię, nazwa użytkownika<br />'
 .'[PASSWORD] - Hasło wybrane przez użytkownika (tylko w pierwszym emailu wysłanym po naciśnięciu "Zarejestruj")<br />'
 .'[CONFIRM] - Wstawia odnośnik do potwierdzenia (aktywacji) konta, jeśli ta funkcja została włączona<br />'
 .'[FIELDNAME] - Dołącza wartości umieszczone w powiązanych z użytkownikiem polach bazy danych. Określ nazwy pól bazy danych, które winny być dołączone. Umieść je w nawiasach kwadratowych [].<br />');
- 
+
 //Registration form
 DEFINE('_UE_REG_COMPLETE_NOPASS','<div class="componentheading">Rejestracja Zakończona!</div>'
 .'<p>Twoje hasło zostało wysłane pocztą elektroniczną na podany adres email.</p>'
@@ -267,7 +267,7 @@ DEFINE('_UE_USER_PROFILE_UPDATED','Twój profil został zmieniony.');
 DEFINE('_UE_USER_RETURN_A','Jeżeli po chwili oczekiwania nie wrócisz do swojego profilu ');
 DEFINE('_UE_USER_RETURN_B','kliknij tutaj');
 //DEFINE('_UPDATE','UPDATE');
- 
+
 //Moderator
 DEFINE('_UE_USERPROFILEBANNED','To konto zostało zablokowane przez moderatora.');
 DEFINE('_UE_REQUESTUNBANPROFILE','Wyślij prośbę o odblokowanie');
@@ -335,7 +335,7 @@ DEFINE('_UE_UNBANUSERREQUEST_MSG','Użytkownik przekazał prośbę o odblokoanie
 //Alpha 3 Build
 DEFINE('_UE_IMAGE','Miniaturka');
 DEFINE('_UE_FORMATNAME','Nazwa sformatowana');
- 
+
 //Alpha 4 Build
 DEFINE('_UE_ADMINREQUIREDFIELDS','Pola wymagane w administratorze');
 DEFINE('_UE_ADMINREQUIREDFIELDS_DESC','&quot;Tak&quot;, aby podczas edycji kont użytkowników z poziomu panelu administracyjnego respektowane było wypełnienie pól oznaczonych jako wymagane. W przeciwnym przypadku ustaw &quot;Nie&quot;.');
@@ -346,7 +346,7 @@ DEFINE('_UE_MODERATOREMAIL_DESC','&quot;Tak&quot;, aby moderatorzy otrzymywali e
 
 //Beta 1 Build
 DEFINE('_UE_UPDATE','Aktualizuj');
- 
+
 //Beta 2 Build
 DEFINE('_UE_FIELDONPROFILE','To pole jest widoczne w profilu');
 DEFINE('_UE_FIELDNOPROFILE','To pole nie jest widoczne w profilu');
@@ -371,13 +371,13 @@ DEFINE('_UE_REG_TOC_DESC','&quot;Tak&quot;, aby przed zarejestrowaniem się nowy
 DEFINE('_UE_REG_TOC_URL_MSG','URL do regulaminów');
 DEFINE('_UE_REG_TOC_URL_DESC','Wpisz URL do tekstu zasad korzystania z witryny.');
 DEFINE('_UE_LASTUPDATEDON','Ostatnio zmieniane');
- 
+
 //Beta 4 Build
 DEFINE('_UE_EMAILFORMWARNING','WAŻNE:<ol>'
-		.'<li>Twój adres email w profilu to: <strong>%s</strong>.</li>'
-		.'<li>Upewnij się że jest właściwy i sprawdź konfigurację filtru anty spamowego przed wysyłką, ponieważ odbiorca będzie go używał by odpowiedzieć.</li>'
-		.'<li>Zważ na to, że emaile mogą nie być odbierane przez docelowych użytkowników z powodu konfiguracji filtrów antyspamowych.</li>'
-		.'</ol>');
+.'<li>Twój adres email w profilu to: <strong>%s</strong>.</li>'
+.'<li>Upewnij się że jest właściwy i sprawdź konfigurację filtru anty spamowego przed wysyłką, ponieważ odbiorca będzie go używał by odpowiedzieć.</li>'
+.'<li>Zważ na to, że emaile mogą nie być odbierane przez docelowych użytkowników z powodu konfiguracji filtrów antyspamowych.</li>'
+.'</ol>');
 DEFINE('_UE_EMAILFORMSUBJECT','Temat:');
 DEFINE('_UE_EMAILFORMMESSAGE','Wiadomość:');
 DEFINE('_UE_EMAILFORMTITLE','Wyślij wiadomość przez email do %s');
@@ -417,7 +417,7 @@ DEFINE('_UE_REG_COMPLETE_NOPASS_NOAPPR_CONF','<div class="componentheading">Reje
 DEFINE('_UE_NAME_STYLE','Styl nazwy użytkownika');
 DEFINE('_UE_NAME_STYLE_DESC','Rzeczywista nazwa użytkownika może być prezentowana w jednym z trzech sposobów: w jednym polu (imię), w dwóch polach - imię i nazwisko, w trzech polach - imię, drugie imię i nazwisko. Wybierz dowolny format.');
 DEFINE('_UE_USER_CONFIRMED_NEEDAPPR','Dziękujemy za potwierdzenie adresu email. Otwarcie Twojego konta wymaga akceptacji moderatora. Informację o wynikach otrzymasz pocztą elektroniczną.');
-DEFINE('_UE_YOUR_FNAME','Imię');   
+DEFINE('_UE_YOUR_FNAME','Imię');
 DEFINE('_UE_YOUR_MNAME','Drugie imię');
 DEFINE('_UE_YOUR_LNAME','Nazwisko');
 
@@ -477,7 +477,7 @@ DEFINE('_UE_REG_FIRST_VISIT_URL_DESC','Wpisz URL strony, która zostanie wyświe
  nowego użytkownika i/lub  instrukcje dotyczące korzystania z witryny, a także przekierować na stronę z profilem,
  aby go uzupełnić. Pozostaw PUSTE, aby wywołać zwykłą stronę.');
 DEFINE('_UE_NOSUCHPROFILE','Ten profil nie istnieje lub nie jest już dostępny');
- 
+
 //RC 2
 DEFINE('_UE_REG_INTRO_MSG','Tekst wprowadzający dla rejestracji');
 DEFINE('_UE_REG_INTRO_DESC','Wprowdź tekst/kod HTML, który będzie wyświetlany na stronie rejestracyjnej '
@@ -645,7 +645,7 @@ DEFINE('_UE_MENU_PM_OPTIONS_DESC','Edytuj opcje Systemu prywatnych wiadomości')
 DEFINE('_UE_MENU', 'Menu');
 DEFINE('_UE_USER_STATUS', 'Status użytkownika');
 DEFINE('_UE_MENU_CB', 'Społeczność');
-DEFINE('_UE_MENU_ABOUT_CB', 'O Community Builder...'); 
+DEFINE('_UE_MENU_ABOUT_CB', 'O Community Builder...');
 DEFINE('_UE_SITE_POWEREDBY', 'Ten serwis korzysta z Joomla Community Builder');
 DEFINE('_UE_MENU_EDIT', 'Edycja');
 DEFINE('_UE_MENU_VIEW', 'Widok');
@@ -725,7 +725,7 @@ DEFINE('_UE_SB_ORDERING_LATEST','Najpierw nowe');
 DEFINE('_UE_SB_SIGNATURE','Podpis');
 //added for SB 1.5 during 1.0 RC 1
 DEFINE('_UE_SB_POSTSPERPAGE','Postów na stronę');
-DEFINE('_UE_SB_USERTIMEOFFSET','Przesunięcie czasu lokalnego w stosunku do czasu serwera'); 
+DEFINE('_UE_SB_USERTIMEOFFSET','Przesunięcie czasu lokalnego w stosunku do czasu serwera');
 DEFINE('_UE_SB_CONFIRMUNSUBSCRIBEALL','Czy na pewno chcesz zakończyć subskrypcję wszystkich tematów?');
 DEFINE('_UE_FORUMDATE','Data');
 DEFINE('_UE_FORUMCATEGORY','Kategoria');
@@ -805,7 +805,7 @@ if (!defined('_LOGIN_INCOMPLETE'))	DEFINE('_LOGIN_INCOMPLETE','Proszę wypełni�
 if (!defined('_LOGIN_BLOCKED'))		DEFINE('_LOGIN_BLOCKED','Twój login został zablokowany. Skontaktuj się z administratorem.');
 if (!defined('_LOGIN_INCORRECT'))	DEFINE('_LOGIN_INCORRECT','Nazwa użytkownika lub hasło nieprawidłowe. Spróbuj ponownie.');
 if (!defined('_USER_DETAILS_SAVE'))	DEFINE('_USER_DETAILS_SAVE','Twoje ustawienia zostały zapisane.');
- 
+
 // 1.1:
 DEFINE('_UE_MENU_STATUS', 'Status');
 DEFINE('_UE_YOURCONNECTIONS','Twoi znajomi');
@@ -947,13 +947,13 @@ DEFINE('_UE_LOGIN_BLOCKED','Twój login jest zablokowany');
 DEFINE('_UE_REMEMBER_ME', 'Pamiętaj mnie');
 DEFINE('_UE_PASSWORD_REMINDER','Przypomnienie hasła');
 DEFINE('_UE_USERNAME_PASSWORD_REMINDER','Przypomnienie loginu/hasła');
-DEFINE('_UE_REMINDER_NEEDED_FOR','Przypomnienie potrzebne do');
-DEFINE('_UE_LOST__USERNAME','Przypomnieć nazwę użytkownika?');
-DEFINE('_UE_LOST__PASSWORD','Przypomnieć hasło?');
+DEFINE('_UE_REMINDER_NEEDED_FOR','Przypomnieć');
+DEFINE('_UE_LOST__USERNAME','nazwę użytkownika?');
+DEFINE('_UE_LOST__PASSWORD','hasło?');
 DEFINE('_UE_LOST_PASSWORD','Przypomnieć hasło?');
 DEFINE('_UE_USERNAMEREMINDER_SUB','Przypomnienie nazwy użytkownika %s');
 DEFINE('_UE_USERNAMEREMINDER_MSG','Witaj,\n'
-.'Prośba o przypomnienie nazwy użytkownika %s została zgłoszona z twojego konta.\n\n'
+.'Prośba o przypomnienie nazwy użytkownika dla strony %s została zgłoszona z twojego konta.\n\n'
 .'Twoja nazwa użytkownika to: %s\n\n'
 .'Aby zalogować się na swoje konto, kliknij link poniżej:\n'
 
@@ -963,7 +963,7 @@ DEFINE('_UE_USERNAMEREMINDER_MSG','Witaj,\n'
 .'Dziękujemy.\n');
 DEFINE('_UE_NEWPASS_SUB','Nowe hasło: %s');
 DEFINE('_UE_NEWPASS_MSG','Konto użytkownika %s jest połączone z a tym adresem e-mail.\n'
-.'Użytkownik %s poprosił o przesłanie nowego hasła.\n\n'
+.'Użytkownik poprosił o przesłanie nowego hasła do strony %s.\n\n'
 
 .'Twoje nowe hasło: %s\n\n'
 .'Jeżeli nie prosiłeś o nowe hasło, nie obawiaj się niczego.'
@@ -986,9 +986,9 @@ DEFINE('_UE_AVATAR_UPLOAD_DISCLAIMER_TERMS','Poprzez kliknięcie "Wyślij", zaś
 DEFINE('_UE_AVATAR_TOC_LINK','Warunki/Postanowienia');
 DEFINE('_UE_USER_EMAIL_CONFIRMED','Adres mail jest już potwierdzony');
 DEFINE('_UE_LOST_USERNAME_PASSWORD','Przypomnieć login/hasło?');
-DEFINE('_UE_LOST_USERNAME_OR_PASSWORD','Nie pamiętasz loginu lub hasło?');
-DEFINE('_UE_LOST_USERNAME_DESC','Jeżeli nie pamiętasz nazwy użytkownika, wpisz adres e-mail, zostawiając pole <strong>Użytkownik</strong> puste, następnie kliknij <strong>Wyślij nazwę użytkownika</strong>, po chwili dostaniesz ją na swój adres poczty elektronicznej.');
-DEFINE('_UE_LOST_PASSWORD_DESC','Jeżeli nie pamiętasz <strong>hasła</strong>, ale znasz nazwę użytkownika, wypełnij pola <strong>Użytkownik</strong> i <strong>Adres e-mail</strong>, następnie kliknij Wyślij hasło</strong>, po chwili otrzymasz list z nowym hasłem na swój adres poczty elektronicznej. Użyj tego hasła do zalogowania się na stronie.');
+DEFINE('_UE_LOST_USERNAME_OR_PASSWORD','Nie pamiętasz loginu lub hasła?');
+DEFINE('_UE_LOST_USERNAME_DESC','Jeżeli nie pamiętasz nazwy użytkownika, wpisz adres e-mail, zostawiając pole <strong>Nazwa użytkownika</strong> puste, następnie kliknij <strong>Wyślij nazwę użytkownika</strong>, po chwili dostaniesz ją na swój adres poczty elektronicznej.');
+DEFINE('_UE_LOST_PASSWORD_DESC','Jeżeli nie pamiętasz <strong>hasła</strong>, ale znasz nazwę użytkownika, wypełnij pola <strong>Nazwa użytkownika</strong> i <strong>Adres e-mail</strong>, następnie kliknij Wyślij hasło</strong>, po chwili otrzymasz list z nowym hasłem na swój adres poczty elektronicznej. Użyj tego hasła do zalogowania się na stronie.');
 DEFINE('_UE_LOST_USERNAME_PASSWORD_DESC','Jeżeli nie pamiętasz ani nazwy użytkownika, ani hasła, odzyskaj najpierw nazwę użytkownika, a dopiero potem hasło. Do odzyskania nazwy użytkownika wpisz adres email, zostawiając pole <strong>Użytkownik<strong> puste, kliknij <strong>Wyślij nazwę użytkownika</strong>, po chwili  na swój adres poczty elektronicznej otrzymasz list z nazwą użytkownika. Następnie tak samo możesz odzyskać hasło.');
 DEFINE('_UE_BUTTON_SEND','Wyślij');
 DEFINE('_UE_BUTTON_SEND_USERNAME','Wyślij nazwę użytkownika');
@@ -1160,7 +1160,7 @@ DEFINE ('_UE_SHOWEMPTYTABS_DESC','Pokaż wszystkie karty, nawet jeśli karta nie
 DEFINE ('_UE_SHOWEMPTYFIELDS','Pokaż puste pola');
 DEFINE ('_UE_SHOWEMPTYFIELDS_DESC','Pokaż wszytskie pola nawet jeżeli nie mają treści lub pokaż pola z zawartością');
 DEFINE ('_UE_EMPTYFIELDSTEXT','Tekst do wyświetlenia w pustych polach');
-DEFINE ('_UE_EMPTYFIELDSTEXT_DESC','Tekst, który jest wyświetlany w pustych polach. Stałe językowe oraz pola zastępcze również działają. Stała językowa _UE_NO_ANSWER wyświetla "Brak odpowiedzi".'); 
+DEFINE ('_UE_EMPTYFIELDSTEXT_DESC','Tekst, który jest wyświetlany w pustych polach. Stałe językowe oraz pola zastępcze również działają. Stała językowa _UE_NO_ANSWER wyświetla "Brak odpowiedzi".');
 
 
 // 1.2 CB RC 2 beta 2:

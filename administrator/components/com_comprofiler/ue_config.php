@@ -12,7 +12,7 @@ $ueConfig['icons_display']='7';
 $ueConfig['login_type']='1';
 $ueConfig['reg_admin_allowcbregistration']='1';
 $ueConfig['emailpass']='0';
-$ueConfig['reg_admin_approval']='1';
+$ueConfig['reg_admin_approval']='0';
 $ueConfig['reg_confirmation']='1';
 $ueConfig['reg_username_checker']='1';
 $ueConfig['reg_email_checker']='0';
@@ -39,7 +39,7 @@ Pozdrawiamy,
 Sekcja Szybowcowa Aeroklubu Wrocławskiego';
 $ueConfig['reg_show_icons_explain']='0';
 $ueConfig['reg_intro_msg']='';
-$ueConfig['reg_conclusion_msg']='<p>Strona jest otwarta dla członków oraz sympatyków Aeroklubu Wrocławskiego latającyh na naszym lotnisku</p>';
+$ueConfig['reg_conclusion_msg']='<p>Rejestracja jest otwarta dla członków oraz sympatyków Aeroklubu Wrocławskiego latających na naszym lotnisku</p>';
 $ueConfig['reg_enable_toc']='0';
 $ueConfig['reg_toc_url']='index.php?option=com_content&task=view&id=18';
 $ueConfig['reg_first_visit_url']='index.php?option=com_comprofiler';
