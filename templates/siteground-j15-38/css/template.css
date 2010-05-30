@@ -565,8 +565,8 @@ margin-bottom: 14px;
 	padding: 0;
 	background: url(../images/left_body.gif) bottom center no-repeat;
 }
-div.modulebannerpogodowy div div div{
-	padding: 0;
+div.modulebannerpogodowy div div div {
+	padding: 0 0 10px 0;
 	width: auto;
 	margin: 0;
 	background: url(../images/left_top.gif) top center no-repeat;

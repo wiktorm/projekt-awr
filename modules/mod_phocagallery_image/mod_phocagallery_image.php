@@ -769,8 +769,8 @@ if ($images) {
 				}
 			
 
-				$output[$i] .= '<div class="phocagallery-box-file" style="height:'.$imageHeight['boxsize'].'px; width:'.$imageWidth['boxsize'].'px;float:left">' . "\n";
-				$output[$i] .= '<center>'  . "\n";
+				//$output[$i] .= '<div class="phocagallery-box-file" style="height:'.$imageHeight['boxsize'].'px; width:'.$imageWidth['boxsize'].'px;float:left">' . "\n";
+				//$output[$i] .= '<center>'  . "\n";
 				$output[$i] .= '<div class="phocagallery-box-file-first" style="height:'.$imageHeight['size'].'px;width:'.$imageWidth['size'].'px;">'. "\n"
 					.'<div class="phocagallery-box-file-second">' . "\n"
 					.'<div class="phocagallery-box-file-third">' . "\n"
@@ -826,8 +826,8 @@ if ($images) {
 				$output[$i]	.='</center>' . "\n"
 					 .'</div>' . "\n"
 					 .'</div>' . "\n"
-					 .'</div>' . "\n"
-					 .'</center>' . "\n";
+					 .'</div>' . "\n";
+					 //.'</center>' . "\n";
 
 				// Name
 				if ($display_name == 1) {
@@ -892,7 +892,7 @@ if ($images) {
 					$output[$i] .= '</div>';// End detail
 					
 				}
-				$output[$i] .= '</div>';
+				//$output[$i] .= '</div>';
 
 				$i++;
 			break;
